@@ -1,0 +1,8 @@
+C:\WebDiezStudioFINAL\WDS\WDS\bin\WDS.dll.config
+C:\WebDiezStudioFINAL\WDS\WDS\bin\WDS.dll
+C:\WebDiezStudioFINAL\WDS\WDS\bin\WDS.pdb
+C:\WebDiezStudioFINAL\WDS\WDS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\WebDiezStudioFINAL\WDS\WDS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\WebDiezStudioFINAL\WDS\WDS\obj\Debug\WDS.csproj.CoreCompileInputs.cache
+C:\WebDiezStudioFINAL\WDS\WDS\obj\Debug\WDS.dll
+C:\WebDiezStudioFINAL\WDS\WDS\obj\Debug\WDS.pdb
