@@ -1,0 +1,160 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="~/images/favicon.ico">
+    <title>Easy Cook</title>
+
+
+    <environment names="Development">
+        <link href="~/vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+        <link href="~/vendor/bootstrap-datepicker/css/datepicker.min.css" rel="stylesheet">
+        <script src="~/js/ie-emulation-modes-warning.js"></script>
+        <link href="~/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="~/vendor/prettyPhoto/css/prettyPhoto.css" rel="stylesheet">
+        <link href="~/css/style.css" rel="stylesheet">
+        <link href="~/css/custom.css" rel="stylesheet">
+        <link rel="stylesheet" href="~/vendor/woocommerce-FlexSlider/flexslider.css" type="text/css" media="screen" />
+    </environment>
+    <environment exclude="Development">
+        <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/css/bootstrap.min.css"
+              asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
+              asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
+        <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
+    </environment>
+</head>
+<body>
+    <nav class="navbar navbar-default navbar-fixed navbar-transparent dark navbar-scrollspy awesomenav" data-minus-value-desktop="109" data-minus-value-mobile="55" data-speed="1000">
+
+        <div class="container-fluid">
+            <!-- Start Atribute Navigation -->
+            <div class="attr-nav">
+                <ul>
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                </ul>
+            </div>
+            <!-- End Atribute Navigation -->
+            <!-- Start Header Navigation -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="#brand">
+                    <img src="~/images/brand/logo.png" class="logo logo-display" alt="">
+                    <img src="~/images/brand/logo.png" class="logo logo-scrolled" alt="">
+                </a>
+            </div>
+            <!-- End Header Navigation -->
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="navbar-menu">
+
+                <ul class="nav navbar-nav navbar-center">
+                    <li class="active scroll"><a href="#home">Начало</a></li>
+                    <li class="scroll"><a href="#about">За нас</a></li>
+                    <li class="scroll"><a href="#ourmenu">Меню</a></li>
+                    <li class="scroll"><a href="#special">Специалитет</a></li>
+                    <li class="scroll"><a href="#ourcheff">Нашите майстори</a></li>
+                    <li class="scroll"><a href="#gallery">Галерия</a></li>
+                    <li class="scroll"><a href="#testimonial">Мнения</a></li>
+                    <li class="scroll"><a href="#contact">Контакти</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div>
+    </nav>
+    @RenderBody()
+    <hr />
+    <footer id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-6">
+                    <div class="footer-logo">
+                        <img src="~/images/brand/logo-footer.png" class="img-responsive" alt="logo" />
+                    </div>
+                    <div class="contact-info">
+                        <p><i class="fa fa-map-marker"></i>Sofia</p>
+                        <p><i class="fa fa-envelope-o"></i>info@trqbvadaizmislqdomein.com</p>
+                        <p><i class="fa fa-phone"></i>+359883688679</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6">
+                    <div class="newsletter">
+                        <form class="form-inline">
+                            <p class="dart-fs-16">Абонирай се:</p>
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="exampleInputEmail3" placeholder="Имейл">
+                                <button type="submit" class="btn btn-default"><i class="fa fa-send"></i></button>
+                            </div>
+                        </form>
+                        <div class="social">
+                            <p>Последвай ни:</p>
+                            <ul class="list-inline">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="copy">
+                    © 2017 Morsel Restaurant. Designed by Multipurpose Themes
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <environment include="Development">
+        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+        <script src="~/js/ie10-viewport-bug-workaround.js"></script>
+
+        <!-- jQuery -->
+        <script src="~/vendor/jquery/jquery.min.js"></script>
+        <!-- Bootstrap Core JavaScript -->
+        <script src="~/vendor/bootstrap/js/bootstrap.min.js"></script>
+        <!-- Bootstrap Datepicker- JavaScript -->
+        <script src="~/vendor/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+
+        <!-- Nav JavaScript -->
+        <script src="~/js/awesomenav.js"></script>
+
+        <!-- prettyPhoto -->
+        <script src="~/vendor/prettyPhoto/js/jquery.prettyPhoto.js"></script>
+
+        <!-- custom JavaScript -->
+        <script src="~/js/custom.js"></script>
+
+        <script type="text/javascript" src="~/js/jquery.tools.min.js"></script>
+        <!-- template JavaScript -->
+        <script src="~/js/template.js"></script>
+
+        <!-- FlexSlider -->
+        <script defer src="~/vendor/woocommerce-FlexSlider/jquery.flexslider.js"></script>
+    </environment>
+    <environment exclude="Development">
+        <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-2.2.0.min.js"
+                asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
+                asp-fallback-test="window.jQuery"
+                crossorigin="anonymous"
+                integrity="sha384-K+ctZQ+LL8q6tP7I94W+qzQsfRV2a+AfHIi9k8z8l9ggpc8X+Ytst4yBo/hH+8Fk">
+        </script>
+        <script src="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/bootstrap.min.js"
+                asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.min.js"
+                asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal"
+                crossorigin="anonymous"
+                integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa">
+        </script>
+        <script src="~/js/site.min.js" asp-append-version="true"></script>
+    </environment>
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
