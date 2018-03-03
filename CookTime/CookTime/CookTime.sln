@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2020
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CookTime", "CookTime\CookTime.csproj", "{F5685214-C08A-46E5-99ED-64875508F12B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CookTime.App", "CookTime\CookTime.App.csproj", "{F5685214-C08A-46E5-99ED-64875508F12B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CookTime.Data", "CookTime.Data\CookTime.Data.csproj", "{900E9F4B-7C85-43A5-91F5-0DF33B38E35E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{F5685214-C08A-46E5-99ED-64875508F12B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F5685214-C08A-46E5-99ED-64875508F12B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F5685214-C08A-46E5-99ED-64875508F12B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{900E9F4B-7C85-43A5-91F5-0DF33B38E35E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{900E9F4B-7C85-43A5-91F5-0DF33B38E35E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{900E9F4B-7C85-43A5-91F5-0DF33B38E35E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{900E9F4B-7C85-43A5-91F5-0DF33B38E35E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

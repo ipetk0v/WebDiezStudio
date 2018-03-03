@@ -6,3 +6,12 @@ C:\WebDiezStudioFINAL\WDS\WDS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlat
 C:\WebDiezStudioFINAL\WDS\WDS\obj\Debug\WDS.csproj.CoreCompileInputs.cache
 C:\WebDiezStudioFINAL\WDS\WDS\obj\Debug\WDS.dll
 C:\WebDiezStudioFINAL\WDS\WDS\obj\Debug\WDS.pdb
+C:\GitHubProject\WebDiezStudio\WDS\WDS\bin\WDS.dll.config
+C:\GitHubProject\WebDiezStudio\WDS\WDS\bin\WDS.dll
+C:\GitHubProject\WebDiezStudio\WDS\WDS\bin\WDS.pdb
+C:\GitHubProject\WebDiezStudio\WDS\WDS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\GitHubProject\WebDiezStudio\WDS\WDS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\GitHubProject\WebDiezStudio\WDS\WDS\obj\Debug\WDS.csprojResolveAssemblyReference.cache
+C:\GitHubProject\WebDiezStudio\WDS\WDS\obj\Debug\WDS.csproj.CoreCompileInputs.cache
+C:\GitHubProject\WebDiezStudio\WDS\WDS\obj\Debug\WDS.dll
+C:\GitHubProject\WebDiezStudio\WDS\WDS\obj\Debug\WDS.pdb

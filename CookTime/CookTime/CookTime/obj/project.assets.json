@@ -5028,6 +5028,20 @@
         "runtime": {
           "lib/netstandard1.3/Microsoft.WindowsAzure.Storage.dll": {}
         }
+      },
+      "CookTime.Data/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.SqlServer": "2.0.1",
+          "Microsoft.EntityFrameworkCore.Tools": "2.0.1"
+        },
+        "compile": {
+          "bin/placeholder/CookTime.Data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CookTime.Data.dll": {}
+        }
       }
     }
   },
@@ -13113,10 +13127,16 @@
         "windowsazure.storage.8.1.4.nupkg.sha512",
         "windowsazure.storage.nuspec"
       ]
+    },
+    "CookTime.Data/1.0.0": {
+      "type": "project",
+      "path": "../CookTime.Data/CookTime.Data.csproj",
+      "msbuildProject": "../CookTime.Data/CookTime.Data.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
+      "CookTime.Data >= 1.0.0",
       "Microsoft.AspNetCore.All >= 2.0.5",
       "Microsoft.EntityFrameworkCore.Tools >= 2.0.1",
       "Microsoft.NETCore.App >= 2.0.0",
@@ -13134,9 +13154,9 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\GitHubProject\\WebDiezStudio\\CookTime\\CookTime\\CookTime\\CookTime.csproj",
-      "projectName": "CookTime",
-      "projectPath": "C:\\GitHubProject\\WebDiezStudio\\CookTime\\CookTime\\CookTime\\CookTime.csproj",
+      "projectUniqueName": "C:\\GitHubProject\\WebDiezStudio\\CookTime\\CookTime\\CookTime\\CookTime.App.csproj",
+      "projectName": "CookTime.App",
+      "projectPath": "C:\\GitHubProject\\WebDiezStudio\\CookTime\\CookTime\\CookTime\\CookTime.App.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
       "outputPath": "C:\\GitHubProject\\WebDiezStudio\\CookTime\\CookTime\\CookTime\\obj\\",
       "projectStyle": "PackageReference",
@@ -13158,7 +13178,11 @@
       },
       "frameworks": {
         "netcoreapp2.0": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\GitHubProject\\WebDiezStudio\\CookTime\\CookTime\\CookTime.Data\\CookTime.Data.csproj": {
+              "projectPath": "C:\\GitHubProject\\WebDiezStudio\\CookTime\\CookTime\\CookTime.Data\\CookTime.Data.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

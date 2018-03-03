@@ -1,0 +1,11 @@
+C:\GitHubProject\WebDiezStudio\CookTime\CookTime\CookTime.Data\bin\Debug\netcoreapp2.0\CookTime.Data.deps.json
+C:\GitHubProject\WebDiezStudio\CookTime\CookTime\CookTime.Data\bin\Debug\netcoreapp2.0\CookTime.Data.dll
+C:\GitHubProject\WebDiezStudio\CookTime\CookTime\CookTime.Data\obj\Debug\netcoreapp2.0\CookTime.Data.csprojResolveAssemblyReference.cache
+C:\GitHubProject\WebDiezStudio\CookTime\CookTime\CookTime.Data\obj\Debug\netcoreapp2.0\CookTime.Data.csproj.CoreCompileInputs.cache
+C:\GitHubProject\WebDiezStudio\CookTime\CookTime\CookTime.Data\obj\Debug\netcoreapp2.0\CookTime.Data.AssemblyInfoInputs.cache
+C:\GitHubProject\WebDiezStudio\CookTime\CookTime\CookTime.Data\obj\Debug\netcoreapp2.0\CookTime.Data.AssemblyInfo.cs
+C:\GitHubProject\WebDiezStudio\CookTime\CookTime\CookTime.Data\bin\Debug\netcoreapp2.0\CookTime.Data.pdb
+C:\GitHubProject\WebDiezStudio\CookTime\CookTime\CookTime.Data\bin\Debug\netcoreapp2.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\GitHubProject\WebDiezStudio\CookTime\CookTime\CookTime.Data\bin\Debug\netcoreapp2.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.xml
+C:\GitHubProject\WebDiezStudio\CookTime\CookTime\CookTime.Data\obj\Debug\netcoreapp2.0\CookTime.Data.dll
+C:\GitHubProject\WebDiezStudio\CookTime\CookTime\CookTime.Data\obj\Debug\netcoreapp2.0\CookTime.Data.pdb

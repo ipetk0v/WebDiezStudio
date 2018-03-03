@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore;
+﻿using CookTime.App;
+using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 
 namespace CookTime

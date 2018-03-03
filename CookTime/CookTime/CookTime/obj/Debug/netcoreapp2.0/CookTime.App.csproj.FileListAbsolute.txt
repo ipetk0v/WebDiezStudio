@@ -1,0 +1,14 @@
+C:\GitHubProject\WebDiezStudio\CookTime\CookTime\CookTime\obj\Debug\netcoreapp2.0\CookTime.App.csprojResolveAssemblyReference.cache
+C:\GitHubProject\WebDiezStudio\CookTime\CookTime\CookTime\obj\Debug\netcoreapp2.0\CookTime.App.csproj.CoreCompileInputs.cache
+C:\GitHubProject\WebDiezStudio\CookTime\CookTime\CookTime\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+C:\GitHubProject\WebDiezStudio\CookTime\CookTime\CookTime\obj\Debug\netcoreapp2.0\CookTime.App.AssemblyInfoInputs.cache
+C:\GitHubProject\WebDiezStudio\CookTime\CookTime\CookTime\obj\Debug\netcoreapp2.0\CookTime.App.AssemblyInfo.cs
+C:\GitHubProject\WebDiezStudio\CookTime\CookTime\CookTime\bin\Debug\netcoreapp2.0\CookTime.App.deps.json
+C:\GitHubProject\WebDiezStudio\CookTime\CookTime\CookTime\bin\Debug\netcoreapp2.0\CookTime.App.runtimeconfig.json
+C:\GitHubProject\WebDiezStudio\CookTime\CookTime\CookTime\bin\Debug\netcoreapp2.0\CookTime.App.runtimeconfig.dev.json
+C:\GitHubProject\WebDiezStudio\CookTime\CookTime\CookTime\bin\Debug\netcoreapp2.0\CookTime.App.dll
+C:\GitHubProject\WebDiezStudio\CookTime\CookTime\CookTime\bin\Debug\netcoreapp2.0\CookTime.App.pdb
+C:\GitHubProject\WebDiezStudio\CookTime\CookTime\CookTime\bin\Debug\netcoreapp2.0\CookTime.Data.dll
+C:\GitHubProject\WebDiezStudio\CookTime\CookTime\CookTime\bin\Debug\netcoreapp2.0\CookTime.Data.pdb
+C:\GitHubProject\WebDiezStudio\CookTime\CookTime\CookTime\obj\Debug\netcoreapp2.0\CookTime.App.dll
+C:\GitHubProject\WebDiezStudio\CookTime\CookTime\CookTime\obj\Debug\netcoreapp2.0\CookTime.App.pdb

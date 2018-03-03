@@ -1,0 +1,12 @@
+C:\GitHubProject\WebDiezStudio\REWS\RealEstateWebSite\RealEstateWebSite\bin\Debug\netcoreapp2.0\RealEstateWebSite.deps.json
+C:\GitHubProject\WebDiezStudio\REWS\RealEstateWebSite\RealEstateWebSite\bin\Debug\netcoreapp2.0\RealEstateWebSite.runtimeconfig.json
+C:\GitHubProject\WebDiezStudio\REWS\RealEstateWebSite\RealEstateWebSite\bin\Debug\netcoreapp2.0\RealEstateWebSite.runtimeconfig.dev.json
+C:\GitHubProject\WebDiezStudio\REWS\RealEstateWebSite\RealEstateWebSite\bin\Debug\netcoreapp2.0\RealEstateWebSite.dll
+C:\GitHubProject\WebDiezStudio\REWS\RealEstateWebSite\RealEstateWebSite\bin\Debug\netcoreapp2.0\RealEstateWebSite.pdb
+C:\GitHubProject\WebDiezStudio\REWS\RealEstateWebSite\RealEstateWebSite\obj\Debug\netcoreapp2.0\RealEstateWebSite.csproj.CoreCompileInputs.cache
+C:\GitHubProject\WebDiezStudio\REWS\RealEstateWebSite\RealEstateWebSite\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+C:\GitHubProject\WebDiezStudio\REWS\RealEstateWebSite\RealEstateWebSite\obj\Debug\netcoreapp2.0\RealEstateWebSite.AssemblyInfoInputs.cache
+C:\GitHubProject\WebDiezStudio\REWS\RealEstateWebSite\RealEstateWebSite\obj\Debug\netcoreapp2.0\RealEstateWebSite.AssemblyInfo.cs
+C:\GitHubProject\WebDiezStudio\REWS\RealEstateWebSite\RealEstateWebSite\obj\Debug\netcoreapp2.0\RealEstateWebSite.dll
+C:\GitHubProject\WebDiezStudio\REWS\RealEstateWebSite\RealEstateWebSite\obj\Debug\netcoreapp2.0\RealEstateWebSite.pdb
+C:\GitHubProject\WebDiezStudio\REWS\RealEstateWebSite\RealEstateWebSite\obj\Debug\netcoreapp2.0\RealEstateWebSite.csprojResolveAssemblyReference.cache

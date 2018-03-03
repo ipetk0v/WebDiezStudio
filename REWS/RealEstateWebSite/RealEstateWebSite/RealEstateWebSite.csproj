@@ -1,0 +1,202 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <UserSecretsId>aspnet-RealEstateWebSite-3B99E4C8-EE62-4774-8B03-185C6F4A40F7</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\css\bootstrap-rtl.min.css" />
+    <Content Remove="wwwroot\css\bootstrap-select.min.css" />
+    <Content Remove="wwwroot\css\dropzone.css" />
+    <Content Remove="wwwroot\css\jquery.nouislider.min.css" />
+    <Content Remove="wwwroot\css\owl.carousel.css" />
+    <Content Remove="wwwroot\css\style.css" />
+    <Content Remove="wwwroot\js\AnimOnScroll.js" />
+    <Content Remove="wwwroot\js\bootstrap-select.js" />
+    <Content Remove="wwwroot\js\bootstrap-select.min.js" />
+    <Content Remove="wwwroot\js\custom.infobox.js" />
+    <Content Remove="wwwroot\js\custom.js" />
+    <Content Remove="wwwroot\js\dropzone.js" />
+    <Content Remove="wwwroot\js\external.js" />
+    <Content Remove="wwwroot\js\functions.js" />
+    <Content Remove="wwwroot\js\icheck.min.js" />
+    <Content Remove="wwwroot\js\ie-scripts.js" />
+    <Content Remove="wwwroot\js\imagesloaded.pkgd.min.js" />
+    <Content Remove="wwwroot\js\infobox.js" />
+    <Content Remove="wwwroot\js\jquery-2.1.0.min.js" />
+    <Content Remove="wwwroot\js\jquery-migrate-1.2.1.min.js" />
+    <Content Remove="wwwroot\js\jquery.average-color.js" />
+    <Content Remove="wwwroot\js\jquery.color-2.1.2.min.js" />
+    <Content Remove="wwwroot\js\jquery.event.ue.js" />
+    <Content Remove="wwwroot\js\jquery.inview.min.js" />
+    <Content Remove="wwwroot\js\jquery.nouislider.all.min.js" />
+    <Content Remove="wwwroot\js\jquery.udraggable.js" />
+    <Content Remove="wwwroot\js\markerclusterer.js" />
+    <Content Remove="wwwroot\js\masonry.pkgd.min.js" />
+    <Content Remove="wwwroot\js\moment-with-locales.min.js" />
+    <Content Remove="wwwroot\js\owl.carousel.min.js" />
+    <Content Remove="wwwroot\js\richmarker-compiled.js" />
+    <Content Remove="wwwroot\js\scrollReveal.min.js" />
+    <Content Remove="wwwroot\js\smoothscroll.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Views\Home\index-map.html" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.0.1" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.0.2" PrivateAssets="All" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="2.0.1" />
+    <DotNetCliToolReference Include="Microsoft.Extensions.SecretManager.Tools" Version="2.0.0" />
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\bootstrap\css\bootstrap-theme.css" />
+    <None Include="wwwroot\bootstrap\css\bootstrap-theme.css.map" />
+    <None Include="wwwroot\bootstrap\css\bootstrap-theme.min.css" />
+    <None Include="wwwroot\bootstrap\css\bootstrap.css" />
+    <None Include="wwwroot\bootstrap\css\bootstrap.css.map" />
+    <None Include="wwwroot\bootstrap\css\bootstrap.min.css" />
+    <None Include="wwwroot\bootstrap\fonts\glyphicons-halflings-regular.eot" />
+    <None Include="wwwroot\bootstrap\fonts\glyphicons-halflings-regular.svg" />
+    <None Include="wwwroot\bootstrap\fonts\glyphicons-halflings-regular.ttf" />
+    <None Include="wwwroot\bootstrap\fonts\glyphicons-halflings-regular.woff" />
+    <None Include="wwwroot\bootstrap\fonts\glyphicons-halflings-regular.woff2" />
+    <None Include="wwwroot\bootstrap\js\bootstrap.js" />
+    <None Include="wwwroot\bootstrap\js\bootstrap.min.js" />
+    <None Include="wwwroot\bootstrap\js\npm.js" />
+    <None Include="wwwroot\config.rb" />
+    <None Include="wwwroot\css\bootstrap-rtl.min.css" />
+    <None Include="wwwroot\css\bootstrap-select.min.css" />
+    <None Include="wwwroot\css\dropzone.css" />
+    <None Include="wwwroot\css\jquery.nouislider.min.css" />
+    <None Include="wwwroot\css\owl.carousel.css" />
+    <None Include="wwwroot\css\style.css" />
+    <None Include="wwwroot\fonts\font-awesome.css" />
+    <None Include="wwwroot\fonts\fontawesome-webfont.eot" />
+    <None Include="wwwroot\fonts\fontawesome-webfont.svg" />
+    <None Include="wwwroot\fonts\fontawesome-webfont.ttf" />
+    <None Include="wwwroot\fonts\fontawesome-webfont.woff" />
+    <None Include="wwwroot\fonts\FontAwesome.otf" />
+    <None Include="wwwroot\img\about.jpg" />
+    <None Include="wwwroot\img\arrow-left.png" />
+    <None Include="wwwroot\img\arrow-right.png" />
+    <None Include="wwwroot\img\close-infobox.png" />
+    <None Include="wwwroot\img\close.png" />
+    <None Include="wwwroot\img\cluster.png" />
+    <None Include="wwwroot\img\default-item.png" />
+    <None Include="wwwroot\img\items\1.jpg" />
+    <None Include="wwwroot\img\items\1_b.jpg" />
+    <None Include="wwwroot\img\items\2.jpg" />
+    <None Include="wwwroot\img\items\2_b.jpg" />
+    <None Include="wwwroot\img\items\3.jpg" />
+    <None Include="wwwroot\img\items\3_b.jpg" />
+    <None Include="wwwroot\img\items\4.jpg" />
+    <None Include="wwwroot\img\items\4_b.jpg" />
+    <None Include="wwwroot\img\items\5.jpg" />
+    <None Include="wwwroot\img\items\5_b.jpg" />
+    <None Include="wwwroot\img\items\6.jpg" />
+    <None Include="wwwroot\img\items\6_b.jpg" />
+    <None Include="wwwroot\img\items\7.jpg" />
+    <None Include="wwwroot\img\items\7_b.jpg" />
+    <None Include="wwwroot\img\items\8.jpg" />
+    <None Include="wwwroot\img\items\8_b.jpg" />
+    <None Include="wwwroot\img\logo.png" />
+    <None Include="wwwroot\img\marker.png" />
+    <None Include="wwwroot\img\person-01.jpg" />
+    <None Include="wwwroot\img\person-02.jpg" />
+    <None Include="wwwroot\img\person-03.jpg" />
+    <None Include="wwwroot\img\person-04.jpg" />
+    <None Include="wwwroot\img\person-05.jpg" />
+    <None Include="wwwroot\img\plus-circle.png" />
+    <None Include="wwwroot\img\plus.png" />
+    <None Include="wwwroot\img\search-bg.jpg" />
+    <None Include="wwwroot\js\AnimOnScroll.js" />
+    <None Include="wwwroot\js\bootstrap-select.js" />
+    <None Include="wwwroot\js\bootstrap-select.min.js" />
+    <None Include="wwwroot\js\custom.infobox.js" />
+    <None Include="wwwroot\js\custom.js" />
+    <None Include="wwwroot\js\dropzone.js" />
+    <None Include="wwwroot\js\external.js" />
+    <None Include="wwwroot\js\functions.js" />
+    <None Include="wwwroot\js\icheck.min.js" />
+    <None Include="wwwroot\js\ie-scripts.js" />
+    <None Include="wwwroot\js\imagesloaded.pkgd.min.js" />
+    <None Include="wwwroot\js\infobox.js" />
+    <None Include="wwwroot\js\jquery-2.1.0.min.js" />
+    <None Include="wwwroot\js\jquery-migrate-1.2.1.min.js" />
+    <None Include="wwwroot\js\jquery.average-color.js" />
+    <None Include="wwwroot\js\jquery.color-2.1.2.min.js" />
+    <None Include="wwwroot\js\jquery.event.ue.js" />
+    <None Include="wwwroot\js\jquery.inview.min.js" />
+    <None Include="wwwroot\js\jquery.nouislider.all.min.js" />
+    <None Include="wwwroot\js\jquery.udraggable.js" />
+    <None Include="wwwroot\js\markerclusterer.js" />
+    <None Include="wwwroot\js\masonry.pkgd.min.js" />
+    <None Include="wwwroot\js\moment-with-locales.min.js" />
+    <None Include="wwwroot\js\owl.carousel.min.js" />
+    <None Include="wwwroot\js\richmarker-compiled.js" />
+    <None Include="wwwroot\js\scrollReveal.min.js" />
+    <None Include="wwwroot\js\smoothscroll.js" />
+    <None Include="wwwroot\pages\about_e.html" />
+    <None Include="wwwroot\pages\contact_e.html" />
+    <None Include="wwwroot\pages\faq_e.html" />
+    <None Include="wwwroot\pages\items\1_e.html" />
+    <None Include="wwwroot\pages\items\2_e.html" />
+    <None Include="wwwroot\pages\items\3_e.html" />
+    <None Include="wwwroot\pages\items\4_e.html" />
+    <None Include="wwwroot\pages\items\5_e.html" />
+    <None Include="wwwroot\pages\items\6_e.html" />
+    <None Include="wwwroot\pages\items\7_e.html" />
+    <None Include="wwwroot\pages\items\8_e.html" />
+    <None Include="wwwroot\pages\persons_e.html" />
+    <None Include="wwwroot\pages\submit_e.html" />
+    <None Include="wwwroot\scss\compass\css3\_animation.scss" />
+    <None Include="wwwroot\scss\compass\css3\_appearance.scss" />
+    <None Include="wwwroot\scss\compass\css3\_background-clip.scss" />
+    <None Include="wwwroot\scss\compass\css3\_background-origin.scss" />
+    <None Include="wwwroot\scss\compass\css3\_background-size.scss" />
+    <None Include="wwwroot\scss\compass\css3\_border-radius.scss" />
+    <None Include="wwwroot\scss\compass\css3\_box-shadow.scss" />
+    <None Include="wwwroot\scss\compass\css3\_box-sizing.scss" />
+    <None Include="wwwroot\scss\compass\css3\_box.scss" />
+    <None Include="wwwroot\scss\compass\css3\_columns.scss" />
+    <None Include="wwwroot\scss\compass\css3\_deprecated-support.scss" />
+    <None Include="wwwroot\scss\compass\css3\_filter.scss" />
+    <None Include="wwwroot\scss\compass\css3\_flexbox.scss" />
+    <None Include="wwwroot\scss\compass\css3\_font-face.scss" />
+    <None Include="wwwroot\scss\compass\css3\_hyphenation.scss" />
+    <None Include="wwwroot\scss\compass\css3\_images.scss" />
+    <None Include="wwwroot\scss\compass\css3\_inline-block.scss" />
+    <None Include="wwwroot\scss\compass\css3\_opacity.scss" />
+    <None Include="wwwroot\scss\compass\css3\_pie.scss" />
+    <None Include="wwwroot\scss\compass\css3\_regions.scss" />
+    <None Include="wwwroot\scss\compass\css3\_selection.scss" />
+    <None Include="wwwroot\scss\compass\css3\_shared.scss" />
+    <None Include="wwwroot\scss\compass\css3\_text-shadow.scss" />
+    <None Include="wwwroot\scss\compass\css3\_transform.scss" />
+    <None Include="wwwroot\scss\compass\css3\_transition.scss" />
+    <None Include="wwwroot\scss\compass\css3\_user-interface.scss" />
+    <None Include="wwwroot\scss\helpers\_animations.scss" />
+    <None Include="wwwroot\scss\helpers\_classes.scss" />
+    <None Include="wwwroot\scss\helpers\_elements.scss" />
+    <None Include="wwwroot\scss\helpers\_forms.scss" />
+    <None Include="wwwroot\scss\helpers\_header.scss" />
+    <None Include="wwwroot\scss\helpers\_map.scss" />
+    <None Include="wwwroot\scss\helpers\_mixins.scss" />
+    <None Include="wwwroot\scss\helpers\_pages.scss" />
+    <None Include="wwwroot\scss\helpers\_responsive.scss" />
+    <None Include="wwwroot\scss\helpers\_universal-classes.scss" />
+    <None Include="wwwroot\scss\helpers\_variables.scss" />
+    <None Include="wwwroot\scss\style.scss" />
+  </ItemGroup>
+
+</Project>

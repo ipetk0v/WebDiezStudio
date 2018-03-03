@@ -1,0 +1,54 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div id="page-wrapper">
+    <div class="search-overlay idle">
+        <div class="wrapper">
+            <div class="inner animate move_from_bottom_short idle">
+                <div class="logo">
+                    <img src="~/img/logo.png">
+                </div>
+                <h2>Намери своят дом</h2>   
+                <form role="form" method="post" id="form-search-overlay" action="~/Home/Home">
+                    <div class="form-group">
+                        <select name="type" multiple title="Търси имот?" class="animate" data-transition-parent=".dropdown-menu">
+                            <option value="1">Под наем</option>
+                            <option value="2">Продажба</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <select name="type" multiple title="Тип на имота?" class="animate" data-transition-parent=".dropdown-menu">
+                            <option value="1">Апартамент</option>
+                            <option value="2">Къща</option>
+                            <option value="3">Земя</option>
+                            <option value="4">Промишлено помещение</option>
+                            <option value="5">Офис</option>
+                            <option value="6">Земя</option>
+                        </select>
+                    </div>
+                    <!--end .form-group-->
+                    <div class="form-group">
+                        <div class="input-group location">
+                            <input type="text" class="form-control" id="location" placeholder="Къде?" name="location">
+                            <span class="input-group-btn">
+                                <button class="btn btn-default animate" type="button"><i class="fa fa-map-marker geolocation" data-toggle="tooltip" data-placement="bottom" title="Find my position"></i></button>
+                            </span>
+                        </div>
+                    </div>
+                    <!-- /.form-group -->
+                    <div class="form-groupt">
+                        <button type="submit" class="btn btn-primary">Search</button>
+                    </div>
+                    <!--end .form-group-->
+                </form>
+            </div>
+            <div class="circle">
+                <div class="element"></div>
+            </div>
+        </div>
+    </div>
+    <div class="background opacity-50">
+        <img src="~/img/688_fyhgughdetails_all_buildings.jpg">
+    </div>
+</div>
