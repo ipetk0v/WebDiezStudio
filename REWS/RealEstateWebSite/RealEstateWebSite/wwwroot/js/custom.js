@@ -307,8 +307,8 @@ $(document).ready(function($) {
 
 // Autocomplete address ------------------------------------------------------------------------------------------------
 
-    var input = document.getElementById('location') ;
-    var autocomplete = new google.maps.places.Autocomplete(input, {
+    var input = document.getElementById('location');
+    var autocomplete = new google.maps.places.autocomplete(input, {
         types: ["geocode"]
     });
     google.maps.event.addListener(autocomplete, 'place_changed', function() {
