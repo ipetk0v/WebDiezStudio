@@ -7,7 +7,6 @@
 
     <environment include="Development">
         <link href="~/fonts/font-awesome.css" rel="stylesheet" type="text/css">
-        <link href='http://fonts.googleapis.com/css?family=Roboto:700,400,300' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="~/bootstrap/css/bootstrap.css" type="text/css">
         <link rel="stylesheet" href="~/css/bootstrap-select.min.css" type="text/css">
         <link rel="stylesheet" href="~/css/owl.carousel.css" type="text/css">
@@ -31,9 +30,12 @@
         <script type="text/javascript" src="~/js/jquery.color-2.1.2.min.js"></script>
         <script type="text/javascript" src="~/js/jquery.average-color.js"></script>
         <script type="text/javascript" src="~/js/masonry.pkgd.min.js"></script>
-        @*<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBt92AtJcaI0R-UQ74SMaj-Cqe7jCgoPTQ&callback=initMap"
-                type="text/javascript"></script>*@
-        @*<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&amp;libraries=places"></script>*@
+        <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
+        </script>
+        <script async defer
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDBHiai2wFyeoNm0XnJJ7ApvmC21nHaDIs&callback=initMap">
+        </script>
+        <script type="text/javascript" src="~/js/map.js"></script>
         <script type="text/javascript" src="~/js/smoothscroll.js"></script>
         <script type="text/javascript" src="~/js/owl.carousel.min.js"></script>
         <script type="text/javascript" src="~/js/bootstrap-select.js"></script>
@@ -42,7 +44,6 @@
         <script type="text/javascript" src="~/js/jquery.inview.min.js"></script>
         <script type="text/javascript" src="~/js/functions.js"></script>
         <script type="text/javascript" src="~/js/custom.js"></script>
-
     </environment>
 
     @RenderSection("Scripts", required: false)

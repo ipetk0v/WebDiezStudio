@@ -439,7 +439,7 @@ function simpleMap(_latitude, _longitude, draggableMarker, scrollwheel, external
 
 // Homepage Google Map -------------------------------------------------------------------------------------------------
 
-function createHomepageGoogleMap(_latitude,_longitude,json){
+function createHomepageGoogleMap(_latitude,_longitude){
     $.get("~/js/custom.infobox.js", function() {
         gMap();
     });

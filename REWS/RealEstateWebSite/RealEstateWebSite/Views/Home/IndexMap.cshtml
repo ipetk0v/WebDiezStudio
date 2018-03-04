@@ -70,7 +70,7 @@
         <!--end .inner-->
     </div>
     <!--end User area-->
-    <header class="animate" id="header">
+    <header class="animate" id="header" style="margin-bottom:0px">
         <div class="container">
             <div class="header-inner">
                 <nav class="secondary">
@@ -88,7 +88,7 @@
                     </div>
                     <ul>
                         <li>
-                            <a href="#" class="has-child">Home</a>
+                            <a href="#" class="has-child">Начало</a>
                             <ul>
                                 <li><a href="index-listing.html">Listing</a></li>
                                 <li><a href="index-map-fullscreen.html">Fullscreen Map</a></li>
@@ -96,10 +96,10 @@
                                 <li><a href="index-search.html">Search</a></li>
                             </ul>
                         </li>
-                        <li><a href="~/pages/about_e.html" data-expand-width="col-8" data-transition-parent=".content-loader" data-external="true">About Us</a></li>
-                        <li><a href="~/pages/persons_e.html" data-expand-width="col-6" data-transition-parent=".content-loader" data-external="true">Agents</a></li>
+                        <li><a href="~/pages/about_e.html" data-expand-width="col-8" data-transition-parent=".content-loader" data-external="true">За нас</a></li>
+                        <li><a href="~/pages/persons_e.html" data-expand-width="col-6" data-transition-parent=".content-loader" data-external="true">Агенти</a></li>
                         <li><a href="~/pages/faq_e.html" data-expand-width="col-6" data-transition-parent=".content-loader" data-external="true">FAQ</a></li>
-                        <li><a href="~/pages/contact_e.html" data-expand-width="col-6" data-transition-parent=".content-loader" data-external="true">Contact</a></li>
+                        <li><a href="~/pages/contact_e.html" data-expand-width="col-6" data-transition-parent=".content-loader" data-external="true">Контакти</a></li>
                     </ul>
                     <div class="toggle-nav">
                         <div class="dots">
@@ -127,10 +127,10 @@
         <div class="search collapse in" id="search-collapse">
             <div class="container">
                 <form class="main-search" role="form" method="post" action="#">
-                    <div class="row">
+                    <div class="row" style="margin-top:20px;">
                         <div class="col-md-3 col-sm-3">
                             <div class="form-group">
-                                <label for="type">Property Type</label>
+                                <label for="type">Вид на имота</label>
                                 <select name="type" multiple title="All" id="type" class="animate" data-transition-parent=".dropdown-menu">
                                     <option value="1">Apartment</option>
                                     <option value="2">Condominium</option>
@@ -144,7 +144,7 @@
                         </div>
                         <!--/.col-md-6-->
                         <div class="col-md-3 col-sm-3">
-                            <div class="row">
+                            <div class="row" style="margin-top:0px">
                                 <div class="col-md-6 col-sm-6">
                                     <div class="form-group">
                                         <label for="bedrooms">Bedrooms</label>
@@ -225,9 +225,11 @@
                 <!--end Content Loader-->
             </div>
         </div>
-        <div class="map-wrapper grid">
-            <div class="map height-500" id="map"></div>
-            <!--end .map-->
+        <div class="map">
+            <div class="map-wrapper grid">
+                <div class="map height-700" id="map"></div>
+                <!--end .map-->
+            </div>
         </div>
 
         <!--end .map-wrapper-->

@@ -32,6 +32,7 @@
     <Content Remove="wwwroot\js\jquery.inview.min.js" />
     <Content Remove="wwwroot\js\jquery.nouislider.all.min.js" />
     <Content Remove="wwwroot\js\jquery.udraggable.js" />
+    <Content Remove="wwwroot\js\map.js" />
     <Content Remove="wwwroot\js\markerclusterer.js" />
     <Content Remove="wwwroot\js\masonry.pkgd.min.js" />
     <Content Remove="wwwroot\js\moment-with-locales.min.js" />
@@ -119,6 +120,7 @@
     <None Include="wwwroot\img\plus-circle.png" />
     <None Include="wwwroot\img\plus.png" />
     <None Include="wwwroot\img\search-bg.jpg" />
+    <None Include="wwwroot\js\map.js" />
     <None Include="wwwroot\js\AnimOnScroll.js" />
     <None Include="wwwroot\js\bootstrap-select.js" />
     <None Include="wwwroot\js\bootstrap-select.min.js" />
