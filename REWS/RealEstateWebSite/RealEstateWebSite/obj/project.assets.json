@@ -2,6 +2,15 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v2.0": {
+      "GoogleMaps.LocationServices/1.2.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/net40/GoogleMaps.LocationServices.dll": {}
+        },
+        "runtime": {
+          "lib/net40/GoogleMaps.LocationServices.dll": {}
+        }
+      },
       "Libuv/1.10.0": {
         "type": "package",
         "dependencies": {
@@ -5074,6 +5083,17 @@
     }
   },
   "libraries": {
+    "GoogleMaps.LocationServices/1.2.0.1": {
+      "sha512": "Yh4Ur1v5AVUrWGrEmEoL1wGzvyPtImePm+4D93Fc4gOzjhl1opMVqupsrvQMElXh88ItjHon0nDGJkcx1gcxjg==",
+      "type": "package",
+      "path": "googlemaps.locationservices/1.2.0.1",
+      "files": [
+        "content/GoogleMaps.LocationServices.readme.txt",
+        "googlemaps.locationservices.1.2.0.1.nupkg.sha512",
+        "googlemaps.locationservices.nuspec",
+        "lib/net40/GoogleMaps.LocationServices.dll"
+      ]
+    },
     "Libuv/1.10.0": {
       "sha512": "GsCf4q+eyaI49rCPlgYxdxa1SQCysXFFdSJWdstrwxytg4+VPYLYrXD4AT2rjHVJ+UF7SSWX9CapWEYaU4ejVQ==",
       "type": "package",
@@ -13190,6 +13210,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
+      "GoogleMaps.LocationServices >= 1.2.0.1",
       "Microsoft.AspNetCore.All >= 2.0.5",
       "Microsoft.EntityFrameworkCore.Tools >= 2.0.1",
       "Microsoft.NETCore.App >= 2.0.0",
@@ -13248,6 +13269,10 @@
     "frameworks": {
       "netcoreapp2.0": {
         "dependencies": {
+          "GoogleMaps.LocationServices": {
+            "target": "Package",
+            "version": "[1.2.0.1, )"
+          },
           "Microsoft.AspNetCore.All": {
             "target": "Package",
             "version": "[2.0.5, )"
@@ -13275,5 +13300,17 @@
         "warn": true
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'GoogleMaps.LocationServices 1.2.0.1' was restored using '.NETFramework,Version=v4.6.1' instead of the project target framework '.NETCoreApp,Version=v2.0'. This package may not be fully compatible with your project.",
+      "libraryId": "GoogleMaps.LocationServices",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v2.0"
+      ]
+    }
+  ]
 }

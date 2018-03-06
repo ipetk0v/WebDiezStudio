@@ -1,13 +1,17 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using RealEstateWebSite.Models;
+using System.Collections.Generic;
 using System.Diagnostics;
+using System.Linq;
 
 namespace RealEstateWebSite.Controllers
 {
     public class HomeController : Controller
     {
-        public IActionResult Index()
+        public IActionResult Index(Dictionary<string, string> LatLeng)
         {
+            ViewBag.Lat = LatLeng.First().Key;
+            ViewBag.Long = LatLeng.First().Value;
             return View();
         }
 

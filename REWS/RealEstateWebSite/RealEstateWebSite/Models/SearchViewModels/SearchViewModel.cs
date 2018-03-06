@@ -8,17 +8,6 @@ namespace RealEstateWebSite.Models.SearchViewModels
 
         public TypePropartyEnum TypeProparty { get; set; }
 
-        public Geometry Location { get; set; }
-    }
-
-    public class Geometry
-    {
-        public Location Location { get; set; }
-    }
-
-    public class Location
-    {
-        public double Lat { get; set; }
-        public double Lng { get; set; }
+        public string Location { get; set; }
     }
 }

@@ -25,7 +25,7 @@
                         <div class="form-group">
                             <div class="input-group location">
                                 <input asp-for="Location" asp- type="text" onfocus="geolocate()" class="form-control" id="autocomplete" placeholder="Къде?" name="Location">
-                                <span class="input-group-btn">
+                                <span asp-validation-for="Location" class="input-group-btn">
                                     <button class="btn btn-default animate" type="button">
                                         <i class="fa fa-map-marker geolocation"
                                            data-toggle="tooltip"
