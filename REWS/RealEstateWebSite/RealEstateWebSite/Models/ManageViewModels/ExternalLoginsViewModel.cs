@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Identity;
 using System.Collections.Generic;
 
-namespace RealEstateWebSite.Data.Models.ManageViewModels
+namespace RealEstateWebSite.Models.ManageViewModels
 {
     public class ExternalLoginsViewModel
     {

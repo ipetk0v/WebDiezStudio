@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using RealEstateWebSite.Data.Models;
+using RealEstateWebSite.Models;
 
 namespace RealEstateWebSite.Data
 {

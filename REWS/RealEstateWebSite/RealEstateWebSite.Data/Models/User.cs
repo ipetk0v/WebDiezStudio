@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity;
 
-namespace RealEstateWebSite.Data.Models
+namespace RealEstateWebSite.Models
 {
     public class User : IdentityUser
     {

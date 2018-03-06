@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace RealEstateWebSite.Data.Models.AccountViewModels
+namespace RealEstateWebSite.Models.AccountViewModels
 {
     public class LoginViewModel
     {

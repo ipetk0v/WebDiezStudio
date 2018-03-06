@@ -181,20 +181,20 @@ $(document).ready(function($) {
         clickEvents(this);
     });
 
-    $('form').on('submit', function(e){
-        e.preventDefault();
-        var _this = $(this);
-        if( $('.search-overlay').length ){
-            $('.search-overlay').removeClass('idle');
-            removeAnimation('.search-overlay');
-            setTimeout(function(){
-                $('.search-overlay').remove();
-                //window.location.replace( _this.attr('action') );
-                window.location.href = _this.attr('action') ;
-            }, 1000);
-        }
+    //$('form').on('submit', function(e){
+    //    e.preventDefault();
+    //    var _this = $(this);
+    //    if( $('.search-overlay').length ){
+    //        $('.search-overlay').removeClass('idle');
+    //        removeAnimation('.search-overlay');
+    //        setTimeout(function(){
+    //            $('.search-overlay').remove();
+    //            //window.location.replace( _this.attr('action') );
+    //            window.location.href = _this.attr('action') ;
+    //        }, 1000);
+    //    }
 
-    });
+    //});
 
 //  Disable page reloading if href is #
 
@@ -307,25 +307,25 @@ $(document).ready(function($) {
 
 // Autocomplete address ------------------------------------------------------------------------------------------------
 
-    var input = document.getElementById('location');
-    var autocomplete = new google.maps.places.autocomplete(input, {
-        types: ["geocode"]
-    });
-    google.maps.event.addListener(autocomplete, 'place_changed', function() {
-        var place = autocomplete.getPlace();
-        if (!place.geometry) {
-            return;
-        }
+    //var input = document.getElementById('location');
+    //var autocomplete = new google.maps.places.autocomplete(input, {
+    //    types: ["geocode"]
+    //});
+    //google.maps.event.addListener(autocomplete, 'place_changed', function() {
+    //    var place = autocomplete.getPlace();
+    //    if (!place.geometry) {
+    //        return;
+    //    }
 
-        var address = '';
-        if (place.address_components) {
-            address = [
-                (place.address_components[0] && place.address_components[0].short_name || ''),
-                (place.address_components[1] && place.address_components[1].short_name || ''),
-                (place.address_components[2] && place.address_components[2].short_name || '')
-            ].join(' ');
-        }
-    });
+    //    var address = '';
+    //    if (place.address_components) {
+    //        address = [
+    //            (place.address_components[0] && place.address_components[0].short_name || ''),
+    //            (place.address_components[1] && place.address_components[1].short_name || ''),
+    //            (place.address_components[2] && place.address_components[2].short_name || '')
+    //        ].join(' ');
+    //    }
+    //});
 
 // Bootstrap Animated Tabs ---------------------------------------------------------------------------------------------
 

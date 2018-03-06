@@ -1,0 +1,8 @@
+C:\GitHubProject\WebDiezStudio\REWS\RealEstateWebSite\RealEstateWebSite.Services\bin\Debug\netcoreapp2.0\RealEstateWebSite.Services.deps.json
+C:\GitHubProject\WebDiezStudio\REWS\RealEstateWebSite\RealEstateWebSite.Services\bin\Debug\netcoreapp2.0\RealEstateWebSite.Services.dll
+C:\GitHubProject\WebDiezStudio\REWS\RealEstateWebSite\RealEstateWebSite.Services\bin\Debug\netcoreapp2.0\RealEstateWebSite.Services.pdb
+C:\GitHubProject\WebDiezStudio\REWS\RealEstateWebSite\RealEstateWebSite.Services\obj\Debug\netcoreapp2.0\RealEstateWebSite.Services.csproj.CoreCompileInputs.cache
+C:\GitHubProject\WebDiezStudio\REWS\RealEstateWebSite\RealEstateWebSite.Services\obj\Debug\netcoreapp2.0\RealEstateWebSite.Services.AssemblyInfoInputs.cache
+C:\GitHubProject\WebDiezStudio\REWS\RealEstateWebSite\RealEstateWebSite.Services\obj\Debug\netcoreapp2.0\RealEstateWebSite.Services.AssemblyInfo.cs
+C:\GitHubProject\WebDiezStudio\REWS\RealEstateWebSite\RealEstateWebSite.Services\obj\Debug\netcoreapp2.0\RealEstateWebSite.Services.dll
+C:\GitHubProject\WebDiezStudio\REWS\RealEstateWebSite\RealEstateWebSite.Services\obj\Debug\netcoreapp2.0\RealEstateWebSite.Services.pdb

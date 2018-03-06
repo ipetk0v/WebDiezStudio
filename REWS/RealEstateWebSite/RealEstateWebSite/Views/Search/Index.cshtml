@@ -1,4 +1,5 @@
-﻿@{
+﻿@model SearchViewModel
+@{
     ViewData["Title"] = "Home Page";
 }
 
@@ -10,32 +11,32 @@
                     <img src="~/img/logo.png">
                 </div>
                 <h2>Намери своят дом</h2>
-                <form role="form" method="post" id="form-search-overlay" action="/Home/Index">
+                <form method="post">                    
                     <div class="form-group">
-                        <select name="type" multiple title="Търси имот?" class="animate" data-transition-parent=".dropdown-menu">
-                            <option value="1">Под наем</option>
-                            <option value="2">Продажба</option>
+                        <select asp-for="RentOrSale" asp-items="Html.GetEnumSelectList<RentOrSaleEnum>()" name="RentOrSale" multiple title="Търси имот?" class="animate" data-transition-parent=".dropdown-menu">
                         </select>
                     </div>
                     <div class="form-group">
-                        <select name="type" multiple title="Тип на имота?" class="animate" data-transition-parent=".dropdown-menu">
-                            <option value="1">Апартамент</option>
-                            <option value="2">Къща</option>
-                            <option value="3">Земя</option>
-                            <option value="4">Промишлено помещение</option>
-                            <option value="5">Офис</option>
-                            <option value="6">Земя</option>
+                        <select asp-for="TypeProparty" asp-items="Html.GetEnumSelectList<TypePropartyEnum>()" name="TypeProparty" multiple title="Тип на имота?" class="animate" data-transition-parent=".dropdown-menu">
                         </select>
                     </div>
                     <!--end .form-group-->
-                    <div class="form-group">
-                        <div class="input-group location">
-                            <input type="text" class="form-control" id="location" placeholder="Къде?" name="location">
-                            <span class="input-group-btn">
-                                <button class="btn btn-default animate" type="button"><i class="fa fa-map-marker geolocation" data-toggle="tooltip" data-placement="bottom" title="Find my position"></i></button>
-                            </span>
+                    <div id="locationField">
+                        <div class="form-group">
+                            <div class="input-group location">
+                                <input asp-for="Location" asp- type="text" onfocus="geolocate()" class="form-control" id="autocomplete" placeholder="Къде?" name="Location">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-default animate" type="button">
+                                        <i class="fa fa-map-marker geolocation"
+                                           data-toggle="tooltip"
+                                           data-placement="bottom"
+                                           title="Find my position"></i>
+                                    </button>
+                                </span>
+                            </div>
                         </div>
                     </div>
+
                     <!-- /.form-group -->
                     <div class="form-groupt">
                         <button type="submit" class="btn btn-primary">Търси</button>
@@ -52,4 +53,5 @@
         <img src="~/img/688_fyhgughdetails_all_buildings.jpg">
     </div>
 </div>
-
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDdiI-QB4yQBI7QpMA1phbgYSVQe4bVpYU&libraries=places&callback=initAutocomplete"
+        async defer></script>

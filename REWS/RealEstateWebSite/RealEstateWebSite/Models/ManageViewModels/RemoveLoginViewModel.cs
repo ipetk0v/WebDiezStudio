@@ -1,4 +1,4 @@
-﻿namespace RealEstateWebSite.Data.Models.ManageViewModels
+﻿namespace RealEstateWebSite.Models.ManageViewModels
 {
     public class RemoveLoginViewModel
     {

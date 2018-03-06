@@ -201,4 +201,8 @@
     <None Include="wwwroot\scss\style.scss" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\RealEstateWebSite.Data\RealEstateWebSite.Data.csproj" />
+  </ItemGroup>
+
 </Project>
