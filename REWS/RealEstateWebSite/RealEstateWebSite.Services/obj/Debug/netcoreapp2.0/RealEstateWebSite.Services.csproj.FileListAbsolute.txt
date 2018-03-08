@@ -6,3 +6,4 @@ C:\GitHubProject\WebDiezStudio\REWS\RealEstateWebSite\RealEstateWebSite.Services
 C:\GitHubProject\WebDiezStudio\REWS\RealEstateWebSite\RealEstateWebSite.Services\obj\Debug\netcoreapp2.0\RealEstateWebSite.Services.AssemblyInfo.cs
 C:\GitHubProject\WebDiezStudio\REWS\RealEstateWebSite\RealEstateWebSite.Services\obj\Debug\netcoreapp2.0\RealEstateWebSite.Services.dll
 C:\GitHubProject\WebDiezStudio\REWS\RealEstateWebSite\RealEstateWebSite.Services\obj\Debug\netcoreapp2.0\RealEstateWebSite.Services.pdb
+C:\GitHubProject\WebDiezStudio\REWS\RealEstateWebSite\RealEstateWebSite.Services\obj\Debug\netcoreapp2.0\RealEstateWebSite.Services.csprojResolveAssemblyReference.cache

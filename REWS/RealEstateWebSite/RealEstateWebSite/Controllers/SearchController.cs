@@ -15,8 +15,12 @@ namespace RealEstateWebSite.Controllers
 
         [HttpPost]
         public IActionResult Index(SearchViewModel model)
-        {
+        {   
             var address = model.Location;
+            if(address == null)
+            {
+                address = "Sofia";
+            }
 
             var locationService = new GoogleLocationService();
             var point = locationService.GetLatLongFromAddress(address);

@@ -3,18 +3,14 @@
     ViewData["Title"] = "home";
 }
 
-<div id="page-wrapper">
+<div class="page-content">
+    @Html.Partial("_Search");
 
-    @Html.Partial("_Header");
+    @Html.Partial("_Map");
 
-    <div class="page-content">
-        @Html.Partial("_Search");
-
-        @Html.Partial("_Map");
-
-        @Html.Partial("_OffersListing");
-    </div>
+    @Html.Partial("_OffersListing");
 </div>
+
 
 <script async defer src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
 </script>

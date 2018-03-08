@@ -1,7 +1,15 @@
 ﻿@model SearchViewModel
 @{
     ViewData["Title"] = "Home Page";
+    Layout = null;
 }
+
+<link href="~/fonts/font-awesome.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="~/bootstrap/css/bootstrap.css" type="text/css">
+<link rel="stylesheet" href="~/css/bootstrap-select.min.css" type="text/css">
+<link rel="stylesheet" href="~/css/owl.carousel.css" type="text/css">
+<link rel="stylesheet" href="~/css/jquery.nouislider.min.css" type="text/css">
+<link rel="stylesheet" href="~/css/style.css" type="text/css">
 
 <div id="page-wrapper">
     <div class="search-overlay idle">
@@ -11,14 +19,12 @@
                     <img src="~/img/logo.png">
                 </div>
                 <h2>Намери своят дом</h2>
-                <form method="post">                    
+                <form method="post">
                     <div class="form-group">
-                        <select asp-for="RentOrSale" asp-items="Html.GetEnumSelectList<RentOrSaleEnum>()" name="RentOrSale" multiple title="Търси имот?" class="animate" data-transition-parent=".dropdown-menu">
-                        </select>
+                        <select asp-for="RentOrSale" asp-items="Html.GetEnumSelectList<RentOrSaleEnum>()" name="RentOrSale" multiple title="Търси имот?" class="animate" data-transition-parent=".dropdown-menu"></select>
                     </div>
                     <div class="form-group">
-                        <select asp-for="TypeProparty" asp-items="Html.GetEnumSelectList<TypePropartyEnum>()" name="TypeProparty" multiple title="Тип на имота?" class="animate" data-transition-parent=".dropdown-menu">
-                        </select>
+                        <select asp-for="TypeProparty" asp-items="Html.GetEnumSelectList<TypePropartyEnum>()" name="TypeProparty" multiple title="Тип на имота?" class="animate" data-transition-parent=".dropdown-menu"></select>
                     </div>
                     <!--end .form-group-->
                     <div id="locationField">
@@ -55,3 +61,20 @@
 </div>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDdiI-QB4yQBI7QpMA1phbgYSVQe4bVpYU&libraries=places&callback=initAutocomplete"
         async defer></script>
+
+<script type="text/javascript" src="~/js/jquery-2.1.0.min.js"></script>
+<script type="text/javascript" src="~/js/imagesloaded.pkgd.min.js"></script>
+<script type="text/javascript" src="~/js/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="~/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="~/js/jquery.color-2.1.2.min.js"></script>
+<script type="text/javascript" src="~/js/jquery.average-color.js"></script>
+<script type="text/javascript" src="~/js/masonry.pkgd.min.js"></script>
+<script type="text/javascript" src="~/js/map.js"></script>
+<script type="text/javascript" src="~/js/smoothscroll.js"></script>
+<script type="text/javascript" src="~/js/owl.carousel.min.js"></script>
+<script type="text/javascript" src="~/js/bootstrap-select.js"></script>
+<script type="text/javascript" src="~/js/icheck.min.js"></script>
+<script type="text/javascript" src="~/js/jquery.nouislider.all.min.js"></script>
+<script type="text/javascript" src="~/js/jquery.inview.min.js"></script>
+<script type="text/javascript" src="~/js/functions.js"></script>
+<script type="text/javascript" src="~/js/custom.js"></script>
