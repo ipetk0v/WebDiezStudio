@@ -6,10 +6,12 @@
 </div>
 
 <script>
+    console.log(@ViewBag.Lat)
+    console.log(@ViewBag.Long)
     function initMap() {
 
         var map = new google.maps.Map(document.getElementById('map'), {
-            zoom: 12,
+            zoom: 12,            
             center: { lat: Number(@ViewBag.Lat), lng: Number(@ViewBag.Long) },
             disableDefaultUI: false,
             scrollwheel: false,
