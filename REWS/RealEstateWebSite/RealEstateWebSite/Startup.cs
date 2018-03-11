@@ -1,12 +1,14 @@
 ﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Localization;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using RealEstateWebSite.Data;
 using RealEstateWebSite.Models;
 using RealEstateWebSite.Services;
+using System.Globalization;
 
 namespace RealEstateWebSite
 {
@@ -25,9 +27,18 @@ namespace RealEstateWebSite
             services.AddDbContext<RealEstateDbContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
-            services.AddIdentity<User, IdentityRole>()
-                .AddEntityFrameworkStores<RealEstateDbContext>()
-                .AddDefaultTokenProviders();
+            services.AddIdentity<User, IdentityRole>(options =>
+            {
+                // Password settings
+                options.Password.RequireDigit = false;
+                options.Password.RequiredLength = 3;
+                options.Password.RequiredUniqueChars = 0;
+                options.Password.RequireLowercase = false;
+                options.Password.RequireNonAlphanumeric = false;
+                options.Password.RequireUppercase = false;
+            })
+            .AddEntityFrameworkStores<RealEstateDbContext>()
+            .AddDefaultTokenProviders();
 
             // Add application services.
             services.AddTransient<IEmailSender, EmailSender>();
@@ -48,7 +59,7 @@ namespace RealEstateWebSite
             {
                 app.UseExceptionHandler("/Home/Error");
             }
-
+                      
             app.UseStaticFiles();
 
             app.UseAuthentication();

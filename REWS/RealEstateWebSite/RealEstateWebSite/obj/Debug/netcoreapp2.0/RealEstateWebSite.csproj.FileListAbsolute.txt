@@ -12,3 +12,4 @@ C:\GitHubProject\WebDiezStudio\REWS\RealEstateWebSite\RealEstateWebSite\obj\Debu
 C:\GitHubProject\WebDiezStudio\REWS\RealEstateWebSite\RealEstateWebSite\bin\Debug\netcoreapp2.0\RealEstateWebSite.Data.dll
 C:\GitHubProject\WebDiezStudio\REWS\RealEstateWebSite\RealEstateWebSite\bin\Debug\netcoreapp2.0\RealEstateWebSite.Data.pdb
 C:\GitHubProject\WebDiezStudio\REWS\RealEstateWebSite\RealEstateWebSite\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+C:\GitHubProject\WebDiezStudio\REWS\RealEstateWebSite\RealEstateWebSite\obj\Debug\netcoreapp2.0\RealEstateWebSite.csproj.CopyComplete

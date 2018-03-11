@@ -21,8 +21,7 @@
                     <li><a href="#">FAQ</a></li>
                     <li><a href="/Home/Contact">Контакти</a></li>
                     <ul>
-                        <li><a href="/Account/Login" class="promoted">Влез</a></li>
-                        <li><a href="/Account/Register" class="promoted">Register</a></li>
+                        @await Html.PartialAsync("_LoginPartial")
                     </ul>
                 </ul>
 
