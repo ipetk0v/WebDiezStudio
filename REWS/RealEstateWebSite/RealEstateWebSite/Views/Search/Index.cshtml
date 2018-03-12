@@ -1,4 +1,5 @@
 ﻿@model SearchViewModel
+@inject SignInManager<User> SignInManager
 @{
     ViewData["Title"] = "Home Page";
     Layout = null;
@@ -24,7 +25,7 @@
                         <select asp-for="RentOrSale" asp-items="Html.GetEnumSelectList<RentOrSaleEnum>()" name="RentOrSale" multiple title="Търси имот?" class="animate" data-transition-parent=".dropdown-menu"></select>
                     </div>
                     <div class="form-group">
-                        <select asp-for="TypeProparty" asp-items="Html.GetEnumSelectList<TypePropartyEnum>()" name="TypeProparty" multiple title="Тип на имота?" class="animate" data-transition-parent=".dropdown-menu"></select>
+                        <select asp-for="TypeProparty" asp-items="Html.GetEnumSelectList<TypePropertyEnum>()" name="TypeProparty" multiple title="Тип на имота?" class="animate" data-transition-parent=".dropdown-menu"></select>
                     </div>
                     <!--end .form-group-->
                     <div id="locationField">
@@ -48,9 +49,12 @@
                     </div>
                     <!--end .form-group-->
                 </form>
+                @if (!User.Identity.IsAuthenticated)
+                {
+                    
+                }
 
                 @await Html.PartialAsync("_LoginPartial")
-
             </div>
             <div class="circle">
                 <div class="element"></div>

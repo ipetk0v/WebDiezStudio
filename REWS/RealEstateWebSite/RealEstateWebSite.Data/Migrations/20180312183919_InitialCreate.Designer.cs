@@ -6,12 +6,13 @@ using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage;
 using Microsoft.EntityFrameworkCore.Storage.Internal;
 using RealEstateWebSite.Data;
+using RealEstateWebSite.Data.Helpers;
 using System;
 
 namespace RealEstateWebSite.Data.Migrations
 {
     [DbContext(typeof(RealEstateDbContext))]
-    [Migration("20180307205229_InitialCreate")]
+    [Migration("20180312183919_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -129,6 +130,51 @@ namespace RealEstateWebSite.Data.Migrations
                     b.ToTable("AspNetUserTokens");
                 });
 
+            modelBuilder.Entity("RealEstateWebSite.Data.Models.Estate", b =>
+                {
+                    b.Property<string>("Id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<string>("Adress")
+                        .IsRequired();
+
+                    b.Property<string>("City")
+                        .IsRequired();
+
+                    b.Property<int>("CounterVisible");
+
+                    b.Property<DateTime>("DateOfPublication");
+
+                    b.Property<string>("Description")
+                        .IsRequired();
+
+                    b.Property<double>("Lat");
+
+                    b.Property<double>("Long");
+
+                    b.Property<string>("PicUrl");
+
+                    b.Property<decimal>("Price");
+
+                    b.Property<decimal>("PricePerSQM");
+
+                    b.Property<string>("References");
+
+                    b.Property<int>("RentOrSale");
+
+                    b.Property<double>("SquareMeter");
+
+                    b.Property<int>("TypeProperty");
+
+                    b.Property<string>("UserId");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Estaties");
+                });
+
             modelBuilder.Entity("RealEstateWebSite.Models.User", b =>
                 {
                     b.Property<string>("Id")
@@ -223,6 +269,13 @@ namespace RealEstateWebSite.Data.Migrations
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade);
+                });
+
+            modelBuilder.Entity("RealEstateWebSite.Data.Models.Estate", b =>
+                {
+                    b.HasOne("RealEstateWebSite.Models.User", "User")
+                        .WithMany("Estaties")
+                        .HasForeignKey("UserId");
                 });
 #pragma warning restore 612, 618
         }

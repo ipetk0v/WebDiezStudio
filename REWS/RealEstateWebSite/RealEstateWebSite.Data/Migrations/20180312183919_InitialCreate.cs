@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using System;
+using System.Collections.Generic;
 
 namespace RealEstateWebSite.Data.Migrations
 {
@@ -153,6 +154,38 @@ namespace RealEstateWebSite.Data.Migrations
                         onDelete: ReferentialAction.Cascade);
                 });
 
+            migrationBuilder.CreateTable(
+                name: "Estaties",
+                columns: table => new
+                {
+                    Id = table.Column<string>(nullable: false),
+                    Adress = table.Column<string>(nullable: false),
+                    City = table.Column<string>(nullable: false),
+                    CounterVisible = table.Column<int>(nullable: false),
+                    DateOfPublication = table.Column<DateTime>(nullable: false),
+                    Description = table.Column<string>(nullable: false),
+                    Lat = table.Column<double>(nullable: false),
+                    Long = table.Column<double>(nullable: false),
+                    PicUrl = table.Column<string>(nullable: true),
+                    Price = table.Column<decimal>(nullable: false),
+                    PricePerSQM = table.Column<decimal>(nullable: false),
+                    References = table.Column<string>(nullable: true),
+                    RentOrSale = table.Column<int>(nullable: false),
+                    SquareMeter = table.Column<double>(nullable: false),
+                    TypeProperty = table.Column<int>(nullable: false),
+                    UserId = table.Column<string>(nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Estaties", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_Estaties_AspNetUsers_UserId",
+                        column: x => x.UserId,
+                        principalTable: "AspNetUsers",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Restrict);
+                });
+
             migrationBuilder.CreateIndex(
                 name: "IX_AspNetRoleClaims_RoleId",
                 table: "AspNetRoleClaims",
@@ -191,6 +224,11 @@ namespace RealEstateWebSite.Data.Migrations
                 column: "NormalizedUserName",
                 unique: true,
                 filter: "[NormalizedUserName] IS NOT NULL");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Estaties_UserId",
+                table: "Estaties",
+                column: "UserId");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
@@ -209,6 +247,9 @@ namespace RealEstateWebSite.Data.Migrations
 
             migrationBuilder.DropTable(
                 name: "AspNetUserTokens");
+
+            migrationBuilder.DropTable(
+                name: "Estaties");
 
             migrationBuilder.DropTable(
                 name: "AspNetRoles");

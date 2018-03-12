@@ -278,7 +278,7 @@ namespace RealEstateWebSite.Controllers
             if (result.Succeeded)
             {
                 _logger.LogInformation("User logged in with {Name} provider.", info.LoginProvider);
-                return RedirectToLocal(returnUrl);
+                return RedirectToAction(nameof(SearchController.Index), "Search");
             }
             if (result.IsLockedOut)
             {

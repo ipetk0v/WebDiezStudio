@@ -40,9 +40,16 @@ namespace RealEstateWebSite
             .AddEntityFrameworkStores<RealEstateDbContext>()
             .AddDefaultTokenProviders();
 
+            // Add External Login
+
+            services.AddAuthentication().AddFacebook(facebookOptions =>
+            {
+                facebookOptions.AppId = "1599879626797892";
+                facebookOptions.AppSecret = "0bbd9d3ac82231bad28e5e00884d06f7";
+            });
+
             // Add application services.
             services.AddTransient<IEmailSender, EmailSender>();
-
             services.AddMvc();
         }
 
@@ -59,7 +66,7 @@ namespace RealEstateWebSite
             {
                 app.UseExceptionHandler("/Home/Error");
             }
-                      
+
             app.UseStaticFiles();
 
             app.UseAuthentication();

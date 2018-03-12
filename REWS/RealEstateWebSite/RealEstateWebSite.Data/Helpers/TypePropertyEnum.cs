@@ -1,6 +1,6 @@
 ﻿namespace RealEstateWebSite.Data.Helpers
 {
-    public enum TypePropartyEnum
+    public enum TypePropertyEnum
     {
         Apartament = 0,
         House = 1,

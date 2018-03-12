@@ -6,7 +6,7 @@ namespace RealEstateWebSite.Models.SearchViewModels
     {
         public RentOrSaleEnum RentOrSale { get; set; }
 
-        public TypePropartyEnum TypeProparty { get; set; }
+        public TypePropertyEnum TypeProparty { get; set; }
 
         public string Location { get; set; }
     }
