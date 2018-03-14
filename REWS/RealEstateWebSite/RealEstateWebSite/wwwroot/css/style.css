@@ -301,7 +301,8 @@ ul.bullets li:before {
 }
 
 /* 2. Header */
-#page-wrapper {
+#
+{
   overflow: hidden;
 }
 #page-wrapper > header {

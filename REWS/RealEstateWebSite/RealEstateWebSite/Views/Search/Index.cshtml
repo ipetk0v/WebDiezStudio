@@ -31,7 +31,7 @@
                     <div id="locationField">
                         <div class="form-group">
                             <div class="input-group location">
-                                <input asp-for="Location" asp- type="text" onfocus="geolocate()" class="form-control" id="autocomplete" placeholder="Къде?" name="Location">
+                                <input asp-for="Location" type="text" onfocus="geolocate()" class="form-control" id="autocomplete" placeholder="Къде?" name="Location">
                                 <span asp-validation-for="Location" class="input-group-btn">
                                     <button class="btn btn-default animate" type="button">
                                         <i class="fa fa-map-marker geolocation"
@@ -49,11 +49,6 @@
                     </div>
                     <!--end .form-group-->
                 </form>
-                @if (!User.Identity.IsAuthenticated)
-                {
-                    
-                }
-
                 @await Html.PartialAsync("_LoginPartial")
             </div>
             <div class="circle">

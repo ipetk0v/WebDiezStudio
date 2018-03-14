@@ -1,8 +1,12 @@
 ﻿using GoogleMaps.LocationServices;
+using GuigleAPI;
 using Microsoft.AspNetCore.Mvc;
 using RealEstateWebSite.Models.SearchViewModels;
 using System.Collections.Generic;
-using System.Threading;
+using System.Net;
+using System.Runtime.Serialization.Json;
+using System.Threading.Tasks;
+using System.Web;
 
 namespace RealEstateWebSite.Controllers
 {
@@ -14,20 +18,14 @@ namespace RealEstateWebSite.Controllers
         }
 
         [HttpPost]
-        public IActionResult Index(SearchViewModel model)
+        public async Task<IActionResult> Index(SearchViewModel model)
         {   
-            var address = model.Location;
-            if(address == null)
-            {
-                address = "Sofia";
-            }
-
-            var locationService = new GoogleLocationService();
-            var point = locationService.GetLatLongFromAddress(address);
+            var address = model.Location;            
+            var result = await GoogleGeocodingAPI.GetCoordinatesFromAddressAsync("Sofia");
 
             var LatLeng = new Dictionary<string, string>();
-            var latitude = point.Latitude.ToString();
-            var longitude = point.Longitude.ToString();
+            var latitude = result.Item1.ToString();
+            var longitude = result.Item2.ToString();
             LatLeng[latitude] = longitude;
 
             return RedirectToAction("Index", "Home", LatLeng);

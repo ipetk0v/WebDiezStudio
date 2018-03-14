@@ -1,14 +1,13 @@
 ﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Localization;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using RealEstateWebSite.Data;
+using RealEstateWebSite.Extensions;
 using RealEstateWebSite.Models;
 using RealEstateWebSite.Services;
-using System.Globalization;
 
 namespace RealEstateWebSite
 {
@@ -27,6 +26,7 @@ namespace RealEstateWebSite
             services.AddDbContext<RealEstateDbContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
+
             services.AddIdentity<User, IdentityRole>(options =>
             {
                 // Password settings
@@ -41,7 +41,6 @@ namespace RealEstateWebSite
             .AddDefaultTokenProviders();
 
             // Add External Login
-
             services.AddAuthentication().AddFacebook(facebookOptions =>
             {
                 facebookOptions.AppId = "1599879626797892";
@@ -56,6 +55,8 @@ namespace RealEstateWebSite
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
+            app.UseDatabaseMigration();
+
             if (env.IsDevelopment())
             {
                 app.UseBrowserLink();
@@ -66,11 +67,9 @@ namespace RealEstateWebSite
             {
                 app.UseExceptionHandler("/Home/Error");
             }
-
+            
             app.UseStaticFiles();
-
             app.UseAuthentication();
-
             app.UseMvc(routes =>
             {
                 routes.MapRoute(

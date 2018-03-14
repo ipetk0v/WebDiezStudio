@@ -12,8 +12,10 @@ namespace RealEstateWebSite.Data
         {
         }
 
+        DbSet<Broker> Brokers { get; set; }
         DbSet<Estate> Estaties { get; set; }
         DbSet<User> User { get; set; }
+        DbSet<Agency> Agency { get; set; }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
@@ -22,6 +24,24 @@ namespace RealEstateWebSite.Data
                 .HasMany(u => u.Estaties)
                 .WithOne(p => p.User)
                 .HasForeignKey(p => p.UserId);
+
+            builder
+                .Entity<Agency>()
+                .HasMany(a => a.Brokers)
+                .WithOne(b => b.Agency)
+                .HasForeignKey(b => b.AgencyId);
+
+            builder
+                .Entity<AgencyEstate>()
+                .HasOne(ae => ae.Agency)
+                .WithMany(a => a.AgencyEstate)
+                .HasForeignKey(a => a.AgencyId);
+
+            builder
+                .Entity<AgencyEstate>()
+                .HasOne(ae => ae.Estate)
+                .WithMany(e => e.AgencyEstate)
+                .HasForeignKey(e => e.EstateId);
 
             base.OnModelCreating(builder);
         }
