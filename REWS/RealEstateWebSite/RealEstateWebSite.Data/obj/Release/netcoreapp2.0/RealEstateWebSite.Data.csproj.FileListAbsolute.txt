@@ -1,0 +1,9 @@
+D:\Projects\WebDiezStudio\REWS\RealEstateWebSite\RealEstateWebSite.Data\bin\Release\netcoreapp2.0\RealEstateWebSite.Data.deps.json
+D:\Projects\WebDiezStudio\REWS\RealEstateWebSite\RealEstateWebSite.Data\bin\Release\netcoreapp2.0\RealEstateWebSite.Data.dll
+D:\Projects\WebDiezStudio\REWS\RealEstateWebSite\RealEstateWebSite.Data\bin\Release\netcoreapp2.0\RealEstateWebSite.Data.pdb
+D:\Projects\WebDiezStudio\REWS\RealEstateWebSite\RealEstateWebSite.Data\obj\Release\netcoreapp2.0\RealEstateWebSite.Data.csprojResolveAssemblyReference.cache
+D:\Projects\WebDiezStudio\REWS\RealEstateWebSite\RealEstateWebSite.Data\obj\Release\netcoreapp2.0\RealEstateWebSite.Data.csproj.CoreCompileInputs.cache
+D:\Projects\WebDiezStudio\REWS\RealEstateWebSite\RealEstateWebSite.Data\obj\Release\netcoreapp2.0\RealEstateWebSite.Data.AssemblyInfoInputs.cache
+D:\Projects\WebDiezStudio\REWS\RealEstateWebSite\RealEstateWebSite.Data\obj\Release\netcoreapp2.0\RealEstateWebSite.Data.AssemblyInfo.cs
+D:\Projects\WebDiezStudio\REWS\RealEstateWebSite\RealEstateWebSite.Data\obj\Release\netcoreapp2.0\RealEstateWebSite.Data.dll
+D:\Projects\WebDiezStudio\REWS\RealEstateWebSite\RealEstateWebSite.Data\obj\Release\netcoreapp2.0\RealEstateWebSite.Data.pdb
