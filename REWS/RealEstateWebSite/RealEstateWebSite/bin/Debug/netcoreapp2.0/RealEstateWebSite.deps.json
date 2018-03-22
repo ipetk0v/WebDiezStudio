@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.0",
-    "signature": "af2d9b920c79d25952d287eb6af01f8d05a169a8"
+    "signature": "9e337ef9fe9085ebe6e6c41a3726e8de13278cb0"
   },
   "compilationOptions": {
     "defines": [
@@ -23,16 +23,17 @@
     ".NETCoreApp,Version=v2.0": {
       "RealEstateWebSite/1.0.0": {
         "dependencies": {
-          "GoogleMaps.LocationServices": "1.2.0.1",
-          "GoogleMapsApi": "0.69.0",
+          "Easyforce.GuigleAPI": "1.0.6",
           "Microsoft.AspNetCore.All": "2.0.6",
           "Microsoft.AspNetCore.Authentication.Facebook": "2.0.3",
           "Microsoft.EntityFrameworkCore": "2.0.2",
           "Microsoft.EntityFrameworkCore.Design": "2.0.2",
+          "Microsoft.EntityFrameworkCore.SqlServer": "2.0.2",
           "Microsoft.EntityFrameworkCore.Tools": "2.0.2",
           "Microsoft.NETCore.App": "2.0.0",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.0.3",
-          "RealEstateWebSite.Data": "1.0.0"
+          "RealEstateWebSite.Data": "1.0.0",
+          "RealEstateWebSite.Services": "1.0.0"
         },
         "runtime": {
           "RealEstateWebSite.dll": {}
@@ -50,22 +51,6 @@
         },
         "compile": {
           "lib/GuigleAPI.dll": {}
-        }
-      },
-      "GoogleMaps.LocationServices/1.2.0.1": {
-        "runtime": {
-          "lib/net40/GoogleMaps.LocationServices.dll": {}
-        },
-        "compile": {
-          "lib/net40/GoogleMaps.LocationServices.dll": {}
-        }
-      },
-      "GoogleMapsApi/0.69.0": {
-        "runtime": {
-          "lib/net40/GoogleMapsApi.dll": {}
-        },
-        "compile": {
-          "lib/net40/GoogleMapsApi.dll": {}
         }
       },
       "Libuv/1.10.0": {
@@ -4094,19 +4079,28 @@
       },
       "RealEstateWebSite.Data/1.0.0": {
         "dependencies": {
-          "Easyforce.GuigleAPI": "1.0.6",
           "Microsoft.AspNetCore.Authentication.Facebook": "2.0.3",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "2.0.2",
+          "Microsoft.EntityFrameworkCore": "2.0.2",
           "Microsoft.EntityFrameworkCore.Design": "2.0.2",
           "Microsoft.EntityFrameworkCore.SqlServer": "2.0.2",
           "Microsoft.EntityFrameworkCore.SqlServer.Design": "1.1.5",
-          "Microsoft.EntityFrameworkCore.Tools": "2.0.2"
+          "Microsoft.EntityFrameworkCore.Tools": "2.0.2",
+          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.0.3"
         },
         "runtime": {
           "RealEstateWebSite.Data.dll": {}
         },
         "compile": {
           "RealEstateWebSite.Data.dll": {}
+        }
+      },
+      "RealEstateWebSite.Services/1.0.0": {
+        "runtime": {
+          "RealEstateWebSite.Services.dll": {}
+        },
+        "compile": {
+          "RealEstateWebSite.Services.dll": {}
         }
       },
       "Microsoft.NETCore.App/2.0.0": {
@@ -4299,20 +4293,6 @@
       "sha512": "sha512-Kjf3PmUu0SJrBjvjZrNjZA3FPGL3cDWn5GF7GvWIESpstir1K0wsQhYCnpqMmM7mrgP8rRUqg1a5VC9qbZ3wfg==",
       "path": "easyforce.guigleapi/1.0.6",
       "hashPath": "easyforce.guigleapi.1.0.6.nupkg.sha512"
-    },
-    "GoogleMaps.LocationServices/1.2.0.1": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-Yh4Ur1v5AVUrWGrEmEoL1wGzvyPtImePm+4D93Fc4gOzjhl1opMVqupsrvQMElXh88ItjHon0nDGJkcx1gcxjg==",
-      "path": "googlemaps.locationservices/1.2.0.1",
-      "hashPath": "googlemaps.locationservices.1.2.0.1.nupkg.sha512"
-    },
-    "GoogleMapsApi/0.69.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-SqEmxyIyiOC/iH18gMnF1OxYgqD+z/HwT5PX00m9tt7Y8xqh2JZSD4ikRZ3SYk3+/Ddw85MrDwIu1Q1CXC+Sqw==",
-      "path": "googlemapsapi/0.69.0",
-      "hashPath": "googlemapsapi.0.69.0.nupkg.sha512"
     },
     "Libuv/1.10.0": {
       "type": "package",
@@ -6457,6 +6437,11 @@
       "hashPath": "windowsazure.storage.8.1.4.nupkg.sha512"
     },
     "RealEstateWebSite.Data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "RealEstateWebSite.Services/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

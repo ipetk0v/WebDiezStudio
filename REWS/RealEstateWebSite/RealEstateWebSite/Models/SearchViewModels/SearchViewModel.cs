@@ -1,4 +1,5 @@
 ﻿using RealEstateWebSite.Data.Helpers;
+using System.ComponentModel.DataAnnotations;
 
 namespace RealEstateWebSite.Models.SearchViewModels
 {
@@ -8,6 +9,7 @@ namespace RealEstateWebSite.Models.SearchViewModels
 
         public TypePropertyEnum TypeProparty { get; set; }
 
+        [Required]
         public string Location { get; set; }
     }
 }

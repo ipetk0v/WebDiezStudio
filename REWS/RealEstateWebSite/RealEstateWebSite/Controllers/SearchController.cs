@@ -15,6 +15,10 @@ namespace RealEstateWebSite.Controllers
         [HttpPost]
         public async Task<IActionResult> Index(SearchViewModel model)
         {
+            if (!ModelState.IsValid)
+            {
+                return View(model);
+            }
             GoogleGeocodingAPI.GoogleAPIKey = "AIzaSyCGsNbs9jtuhItVf8d26SejNlAgfpRF-Oo";
             var result = await GoogleGeocodingAPI.GetCoordinatesFromAddressAsync(model.Location);
             var latitude = result.Item1;

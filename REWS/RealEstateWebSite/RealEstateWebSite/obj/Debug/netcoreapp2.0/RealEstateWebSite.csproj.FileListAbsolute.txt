@@ -19,7 +19,9 @@ D:\Projects\WebDiezStudio\REWS\RealEstateWebSite\RealEstateWebSite\bin\Debug\net
 D:\Projects\WebDiezStudio\REWS\RealEstateWebSite\RealEstateWebSite\bin\Debug\netcoreapp2.0\RealEstateWebSite.dll
 D:\Projects\WebDiezStudio\REWS\RealEstateWebSite\RealEstateWebSite\bin\Debug\netcoreapp2.0\RealEstateWebSite.pdb
 D:\Projects\WebDiezStudio\REWS\RealEstateWebSite\RealEstateWebSite\bin\Debug\netcoreapp2.0\RealEstateWebSite.Data.dll
+D:\Projects\WebDiezStudio\REWS\RealEstateWebSite\RealEstateWebSite\bin\Debug\netcoreapp2.0\RealEstateWebSite.Services.dll
 D:\Projects\WebDiezStudio\REWS\RealEstateWebSite\RealEstateWebSite\bin\Debug\netcoreapp2.0\RealEstateWebSite.Data.pdb
+D:\Projects\WebDiezStudio\REWS\RealEstateWebSite\RealEstateWebSite\bin\Debug\netcoreapp2.0\RealEstateWebSite.Services.pdb
 D:\Projects\WebDiezStudio\REWS\RealEstateWebSite\RealEstateWebSite\obj\Debug\netcoreapp2.0\RealEstateWebSite.csprojResolveAssemblyReference.cache
 D:\Projects\WebDiezStudio\REWS\RealEstateWebSite\RealEstateWebSite\obj\Debug\netcoreapp2.0\RealEstateWebSite.csproj.CoreCompileInputs.cache
 D:\Projects\WebDiezStudio\REWS\RealEstateWebSite\RealEstateWebSite\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs

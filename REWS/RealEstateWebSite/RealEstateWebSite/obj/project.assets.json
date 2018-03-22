@@ -14,24 +14,6 @@
           "lib/GuigleAPI.dll": {}
         }
       },
-      "GoogleMaps.LocationServices/1.2.0.1": {
-        "type": "package",
-        "compile": {
-          "lib/net40/GoogleMaps.LocationServices.dll": {}
-        },
-        "runtime": {
-          "lib/net40/GoogleMaps.LocationServices.dll": {}
-        }
-      },
-      "GoogleMapsApi/0.69.0": {
-        "type": "package",
-        "compile": {
-          "lib/net40/GoogleMapsApi.dll": {}
-        },
-        "runtime": {
-          "lib/net40/GoogleMapsApi.dll": {}
-        }
-      },
       "Libuv/1.10.0": {
         "type": "package",
         "dependencies": {
@@ -5070,19 +5052,30 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.0",
         "dependencies": {
-          "Easyforce.GuigleAPI": "1.0.6",
           "Microsoft.AspNetCore.Authentication.Facebook": "2.0.3",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "2.0.2",
+          "Microsoft.EntityFrameworkCore": "2.0.2",
           "Microsoft.EntityFrameworkCore.Design": "2.0.2",
           "Microsoft.EntityFrameworkCore.SqlServer": "2.0.2",
           "Microsoft.EntityFrameworkCore.SqlServer.Design": "1.1.5",
-          "Microsoft.EntityFrameworkCore.Tools": "2.0.2"
+          "Microsoft.EntityFrameworkCore.Tools": "2.0.2",
+          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.0.3"
         },
         "compile": {
           "bin/placeholder/RealEstateWebSite.Data.dll": {}
         },
         "runtime": {
           "bin/placeholder/RealEstateWebSite.Data.dll": {}
+        }
+      },
+      "RealEstateWebSite.Services/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.0",
+        "compile": {
+          "bin/placeholder/RealEstateWebSite.Services.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/RealEstateWebSite.Services.dll": {}
         }
       }
     }
@@ -5096,27 +5089,6 @@
         "easyforce.guigleapi.1.0.6.nupkg.sha512",
         "easyforce.guigleapi.nuspec",
         "lib/GuigleAPI.dll"
-      ]
-    },
-    "GoogleMaps.LocationServices/1.2.0.1": {
-      "sha512": "Yh4Ur1v5AVUrWGrEmEoL1wGzvyPtImePm+4D93Fc4gOzjhl1opMVqupsrvQMElXh88ItjHon0nDGJkcx1gcxjg==",
-      "type": "package",
-      "path": "googlemaps.locationservices/1.2.0.1",
-      "files": [
-        "content/GoogleMaps.LocationServices.readme.txt",
-        "googlemaps.locationservices.1.2.0.1.nupkg.sha512",
-        "googlemaps.locationservices.nuspec",
-        "lib/net40/GoogleMaps.LocationServices.dll"
-      ]
-    },
-    "GoogleMapsApi/0.69.0": {
-      "sha512": "SqEmxyIyiOC/iH18gMnF1OxYgqD+z/HwT5PX00m9tt7Y8xqh2JZSD4ikRZ3SYk3+/Ddw85MrDwIu1Q1CXC+Sqw==",
-      "type": "package",
-      "path": "googlemapsapi/0.69.0",
-      "files": [
-        "googlemapsapi.0.69.0.nupkg.sha512",
-        "googlemapsapi.nuspec",
-        "lib/net40/GoogleMapsApi.dll"
       ]
     },
     "Libuv/1.10.0": {
@@ -13235,20 +13207,26 @@
       "type": "project",
       "path": "../RealEstateWebSite.Data/RealEstateWebSite.Data.csproj",
       "msbuildProject": "../RealEstateWebSite.Data/RealEstateWebSite.Data.csproj"
+    },
+    "RealEstateWebSite.Services/1.0.0": {
+      "type": "project",
+      "path": "../RealEstateWebSite.Services/RealEstateWebSite.Services.csproj",
+      "msbuildProject": "../RealEstateWebSite.Services/RealEstateWebSite.Services.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
-      "GoogleMaps.LocationServices >= 1.2.0.1",
-      "GoogleMapsApi >= 0.69.0",
+      "Easyforce.GuigleAPI >= 1.0.6",
       "Microsoft.AspNetCore.All >= 2.0.6",
       "Microsoft.AspNetCore.Authentication.Facebook >= 2.0.3",
       "Microsoft.EntityFrameworkCore >= 2.0.2",
       "Microsoft.EntityFrameworkCore.Design >= 2.0.2",
+      "Microsoft.EntityFrameworkCore.SqlServer >= 2.0.2",
       "Microsoft.EntityFrameworkCore.Tools >= 2.0.2",
       "Microsoft.NETCore.App >= 2.0.0",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 2.0.3",
-      "RealEstateWebSite.Data >= 1.0.0"
+      "RealEstateWebSite.Data >= 1.0.0",
+      "RealEstateWebSite.Services >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -13286,6 +13264,9 @@
           "projectReferences": {
             "D:\\Projects\\WebDiezStudio\\REWS\\RealEstateWebSite\\RealEstateWebSite.Data\\RealEstateWebSite.Data.csproj": {
               "projectPath": "D:\\Projects\\WebDiezStudio\\REWS\\RealEstateWebSite\\RealEstateWebSite.Data\\RealEstateWebSite.Data.csproj"
+            },
+            "D:\\Projects\\WebDiezStudio\\REWS\\RealEstateWebSite\\RealEstateWebSite.Services\\RealEstateWebSite.Services.csproj": {
+              "projectPath": "D:\\Projects\\WebDiezStudio\\REWS\\RealEstateWebSite\\RealEstateWebSite.Services\\RealEstateWebSite.Services.csproj"
             }
           }
         }
@@ -13299,13 +13280,9 @@
     "frameworks": {
       "netcoreapp2.0": {
         "dependencies": {
-          "GoogleMaps.LocationServices": {
+          "Easyforce.GuigleAPI": {
             "target": "Package",
-            "version": "[1.2.0.1, )"
-          },
-          "GoogleMapsApi": {
-            "target": "Package",
-            "version": "[0.69.0, )"
+            "version": "[1.0.6, )"
           },
           "Microsoft.AspNetCore.All": {
             "target": "Package",
@@ -13320,6 +13297,10 @@
             "version": "[2.0.2, )"
           },
           "Microsoft.EntityFrameworkCore.Design": {
+            "target": "Package",
+            "version": "[2.0.2, )"
+          },
+          "Microsoft.EntityFrameworkCore.SqlServer": {
             "target": "Package",
             "version": "[2.0.2, )"
           },
@@ -13354,26 +13335,6 @@
       "warningLevel": 1,
       "message": "Package 'Easyforce.GuigleAPI 1.0.6' was restored using '.NETFramework,Version=v4.6.1' instead of the project target framework '.NETCoreApp,Version=v2.0'. This package may not be fully compatible with your project.",
       "libraryId": "Easyforce.GuigleAPI",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v2.0"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'GoogleMaps.LocationServices 1.2.0.1' was restored using '.NETFramework,Version=v4.6.1' instead of the project target framework '.NETCoreApp,Version=v2.0'. This package may not be fully compatible with your project.",
-      "libraryId": "GoogleMaps.LocationServices",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v2.0"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'GoogleMapsApi 0.69.0' was restored using '.NETFramework,Version=v4.6.1' instead of the project target framework '.NETCoreApp,Version=v2.0'. This package may not be fully compatible with your project.",
-      "libraryId": "GoogleMapsApi",
       "targetGraphs": [
         ".NETCoreApp,Version=v2.0"
       ]

@@ -7,15 +7,16 @@ namespace RealEstateWebSite.Data
 {
     public class RealEstateDbContext : IdentityDbContext<User>
     {
+        public DbSet<Broker> Brokers { get; set; }
+        public DbSet<Estate> Estaties { get; set; }
+        public DbSet<Agency> Agency { get; set; }
+        public DbSet<AgencyEstate> AgencyEstate { get; set; }
+
         public RealEstateDbContext(DbContextOptions<RealEstateDbContext> options)
             : base(options)
         {
         }
 
-        DbSet<Broker> Brokers { get; set; }
-        DbSet<Estate> Estaties { get; set; }
-        DbSet<User> User { get; set; }
-        DbSet<Agency> Agency { get; set; }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
