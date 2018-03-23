@@ -13230,25 +13230,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ipetkov\\.nuget\\packages\\": {},
+    "C:\\Users\\User\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Projects\\WebDiezStudio\\REWS\\RealEstateWebSite\\RealEstateWebSite\\RealEstateWebSite.csproj",
+      "projectUniqueName": "C:\\GitHubProject\\WebDiezStudio\\REWS\\RealEstateWebSite\\RealEstateWebSite\\RealEstateWebSite.csproj",
       "projectName": "RealEstateWebSite",
-      "projectPath": "D:\\Projects\\WebDiezStudio\\REWS\\RealEstateWebSite\\RealEstateWebSite\\RealEstateWebSite.csproj",
-      "packagesPath": "C:\\Users\\ipetkov\\.nuget\\packages\\",
-      "outputPath": "D:\\Projects\\WebDiezStudio\\REWS\\RealEstateWebSite\\RealEstateWebSite\\obj\\",
+      "projectPath": "C:\\GitHubProject\\WebDiezStudio\\REWS\\RealEstateWebSite\\RealEstateWebSite\\RealEstateWebSite.csproj",
+      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+      "outputPath": "C:\\GitHubProject\\WebDiezStudio\\REWS\\RealEstateWebSite\\RealEstateWebSite\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\ipetkov\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
       ],
@@ -13262,19 +13262,11 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-<<<<<<< HEAD
             "C:\\GitHubProject\\WebDiezStudio\\REWS\\RealEstateWebSite\\RealEstateWebSite.Data\\RealEstateWebSite.Data.csproj": {
               "projectPath": "C:\\GitHubProject\\WebDiezStudio\\REWS\\RealEstateWebSite\\RealEstateWebSite.Data\\RealEstateWebSite.Data.csproj"
             },
             "C:\\GitHubProject\\WebDiezStudio\\REWS\\RealEstateWebSite\\RealEstateWebSite.Services\\RealEstateWebSite.Services.csproj": {
               "projectPath": "C:\\GitHubProject\\WebDiezStudio\\REWS\\RealEstateWebSite\\RealEstateWebSite.Services\\RealEstateWebSite.Services.csproj"
-=======
-            "D:\\Projects\\WebDiezStudio\\REWS\\RealEstateWebSite\\RealEstateWebSite.Data\\RealEstateWebSite.Data.csproj": {
-              "projectPath": "D:\\Projects\\WebDiezStudio\\REWS\\RealEstateWebSite\\RealEstateWebSite.Data\\RealEstateWebSite.Data.csproj"
-            },
-            "D:\\Projects\\WebDiezStudio\\REWS\\RealEstateWebSite\\RealEstateWebSite.Services\\RealEstateWebSite.Services.csproj": {
-              "projectPath": "D:\\Projects\\WebDiezStudio\\REWS\\RealEstateWebSite\\RealEstateWebSite.Services\\RealEstateWebSite.Services.csproj"
->>>>>>> eec0f47a69daa8fc49641fbc8ca720692cf4dc19
             }
           }
         }
