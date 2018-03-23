@@ -135,19 +135,29 @@ namespace RealEstateWebSite.Data.Migrations
                     b.Property<string>("Id")
                         .ValueGeneratedOnAdd();
 
-                    b.Property<string>("Adress");
+                    b.Property<string>("Adress")
+                        .IsRequired()
+                        .HasMaxLength(50);
 
-                    b.Property<string>("Description");
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasMaxLength(1000);
 
                     b.Property<double>("EndWorkTime");
 
-                    b.Property<string>("Fax");
+                    b.Property<string>("Fax")
+                        .IsRequired()
+                        .HasMaxLength(50);
 
-                    b.Property<string>("Name");
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(50);
 
                     b.Property<double>("StartWorkTime");
 
-                    b.Property<string>("TelNumber");
+                    b.Property<string>("TelNumber")
+                        .IsRequired()
+                        .HasMaxLength(50);
 
                     b.HasKey("Id");
 
@@ -159,13 +169,15 @@ namespace RealEstateWebSite.Data.Migrations
                     b.Property<string>("Id")
                         .ValueGeneratedOnAdd();
 
-                    b.Property<string>("AgencyId");
+                    b.Property<string>("AgencyId")
+                        .IsRequired();
 
-                    b.Property<string>("EstateId");
+                    b.Property<string>("EstateId")
+                        .IsRequired();
 
                     b.HasKey("Id");
 
-                    b.HasIndex("AgencyId");
+                    b.HasAlternateKey("AgencyId", "EstateId");
 
                     b.HasIndex("EstateId");
 
@@ -178,21 +190,24 @@ namespace RealEstateWebSite.Data.Migrations
                         .ValueGeneratedOnAdd();
 
                     b.Property<string>("Adress")
-                        .IsRequired();
+                        .IsRequired()
+                        .HasMaxLength(200);
 
                     b.Property<string>("AgencyId");
 
                     b.Property<string>("BrokerId");
 
                     b.Property<string>("City")
-                        .IsRequired();
+                        .IsRequired()
+                        .HasMaxLength(100);
 
                     b.Property<int>("CounterVisible");
 
                     b.Property<DateTime>("DateOfPublication");
 
                     b.Property<string>("Description")
-                        .IsRequired();
+                        .IsRequired()
+                        .HasMaxLength(1000);
 
                     b.Property<double>("Lat");
 
@@ -345,11 +360,13 @@ namespace RealEstateWebSite.Data.Migrations
                 {
                     b.HasOne("RealEstateWebSite.Data.Models.Agency", "Agency")
                         .WithMany("AgencyEstate")
-                        .HasForeignKey("AgencyId");
+                        .HasForeignKey("AgencyId")
+                        .OnDelete(DeleteBehavior.Cascade);
 
                     b.HasOne("RealEstateWebSite.Data.Models.Estate", "Estate")
                         .WithMany("AgencyEstate")
-                        .HasForeignKey("EstateId");
+                        .HasForeignKey("EstateId")
+                        .OnDelete(DeleteBehavior.Cascade);
                 });
 
             modelBuilder.Entity("RealEstateWebSite.Data.Models.Estate", b =>

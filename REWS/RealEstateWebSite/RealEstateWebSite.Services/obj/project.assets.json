@@ -670,9 +670,6 @@
   },
   "project": {
     "version": "1.0.0",
-    "restoreSettings": {
-      "hideWarningsAndErrors": true
-    },
     "restore": {
       "projectUniqueName": "C:\\GitHubProject\\WebDiezStudio\\REWS\\RealEstateWebSite\\RealEstateWebSite.Services\\RealEstateWebSite.Services.csproj",
       "projectName": "RealEstateWebSite.Services",

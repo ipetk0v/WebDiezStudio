@@ -279,7 +279,7 @@ function averageColor(element){
         imagesLoaded( image, function(e) {
             averageColor = image.averageColorAsString();
             saturatedColor = $.Color(averageColor).hsla(null, .04, 0.6, null);
-            $(_this).find('.average-color').css('background-color', saturatedColor);
+            $(_this).find('.average-color').css('background-color', 'rgba(0, 156, 255, 0.7)' );
         });
     });
 }

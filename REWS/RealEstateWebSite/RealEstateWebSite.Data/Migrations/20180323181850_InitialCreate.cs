@@ -10,6 +10,24 @@ namespace RealEstateWebSite.Data.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
+                name: "Agency",
+                columns: table => new
+                {
+                    Id = table.Column<string>(nullable: false),
+                    Adress = table.Column<string>(maxLength: 50, nullable: false),
+                    Description = table.Column<string>(maxLength: 1000, nullable: false),
+                    EndWorkTime = table.Column<double>(nullable: false),
+                    Fax = table.Column<string>(maxLength: 50, nullable: false),
+                    Name = table.Column<string>(maxLength: 50, nullable: false),
+                    StartWorkTime = table.Column<double>(nullable: false),
+                    TelNumber = table.Column<string>(maxLength: 50, nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Agency", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "AspNetRoles",
                 columns: table => new
                 {
@@ -27,9 +45,12 @@ namespace RealEstateWebSite.Data.Migrations
                 name: "AspNetUsers",
                 columns: table => new
                 {
+                    AgencyId = table.Column<string>(nullable: true),
+                    PictureUrl = table.Column<string>(nullable: true),
                     Id = table.Column<string>(nullable: false),
                     AccessFailedCount = table.Column<int>(nullable: false),
                     ConcurrencyStamp = table.Column<string>(nullable: true),
+                    Discriminator = table.Column<string>(nullable: false),
                     Email = table.Column<string>(maxLength: 256, nullable: true),
                     EmailConfirmed = table.Column<bool>(nullable: false),
                     LockoutEnabled = table.Column<bool>(nullable: false),
@@ -46,6 +67,12 @@ namespace RealEstateWebSite.Data.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_AspNetUsers", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_AspNetUsers_Agency_AgencyId",
+                        column: x => x.AgencyId,
+                        principalTable: "Agency",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateTable(
@@ -159,11 +186,13 @@ namespace RealEstateWebSite.Data.Migrations
                 columns: table => new
                 {
                     Id = table.Column<string>(nullable: false),
-                    Adress = table.Column<string>(nullable: false),
-                    City = table.Column<string>(nullable: false),
+                    Adress = table.Column<string>(maxLength: 200, nullable: false),
+                    AgencyId = table.Column<string>(nullable: true),
+                    BrokerId = table.Column<string>(nullable: true),
+                    City = table.Column<string>(maxLength: 100, nullable: false),
                     CounterVisible = table.Column<int>(nullable: false),
                     DateOfPublication = table.Column<DateTime>(nullable: false),
-                    Description = table.Column<string>(nullable: false),
+                    Description = table.Column<string>(maxLength: 1000, nullable: false),
                     Lat = table.Column<double>(nullable: false),
                     Long = table.Column<double>(nullable: false),
                     PicUrl = table.Column<string>(nullable: true),
@@ -179,12 +208,55 @@ namespace RealEstateWebSite.Data.Migrations
                 {
                     table.PrimaryKey("PK_Estaties", x => x.Id);
                     table.ForeignKey(
+                        name: "FK_Estaties_Agency_AgencyId",
+                        column: x => x.AgencyId,
+                        principalTable: "Agency",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Restrict);
+                    table.ForeignKey(
+                        name: "FK_Estaties_AspNetUsers_BrokerId",
+                        column: x => x.BrokerId,
+                        principalTable: "AspNetUsers",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Restrict);
+                    table.ForeignKey(
                         name: "FK_Estaties_AspNetUsers_UserId",
                         column: x => x.UserId,
                         principalTable: "AspNetUsers",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Restrict);
                 });
+
+            migrationBuilder.CreateTable(
+                name: "AgencyEstate",
+                columns: table => new
+                {
+                    Id = table.Column<string>(nullable: false),
+                    AgencyId = table.Column<string>(nullable: false),
+                    EstateId = table.Column<string>(nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_AgencyEstate", x => x.Id);
+                    table.UniqueConstraint("AK_AgencyEstate_AgencyId_EstateId", x => new { x.AgencyId, x.EstateId });
+                    table.ForeignKey(
+                        name: "FK_AgencyEstate_Agency_AgencyId",
+                        column: x => x.AgencyId,
+                        principalTable: "Agency",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_AgencyEstate_Estaties_EstateId",
+                        column: x => x.EstateId,
+                        principalTable: "Estaties",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateIndex(
+                name: "IX_AgencyEstate_EstateId",
+                table: "AgencyEstate",
+                column: "EstateId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_AspNetRoleClaims_RoleId",
@@ -214,6 +286,11 @@ namespace RealEstateWebSite.Data.Migrations
                 column: "RoleId");
 
             migrationBuilder.CreateIndex(
+                name: "IX_AspNetUsers_AgencyId",
+                table: "AspNetUsers",
+                column: "AgencyId");
+
+            migrationBuilder.CreateIndex(
                 name: "EmailIndex",
                 table: "AspNetUsers",
                 column: "NormalizedEmail");
@@ -226,6 +303,16 @@ namespace RealEstateWebSite.Data.Migrations
                 filter: "[NormalizedUserName] IS NOT NULL");
 
             migrationBuilder.CreateIndex(
+                name: "IX_Estaties_AgencyId",
+                table: "Estaties",
+                column: "AgencyId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Estaties_BrokerId",
+                table: "Estaties",
+                column: "BrokerId");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_Estaties_UserId",
                 table: "Estaties",
                 column: "UserId");
@@ -233,6 +320,9 @@ namespace RealEstateWebSite.Data.Migrations
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.DropTable(
+                name: "AgencyEstate");
+
             migrationBuilder.DropTable(
                 name: "AspNetRoleClaims");
 
@@ -256,6 +346,9 @@ namespace RealEstateWebSite.Data.Migrations
 
             migrationBuilder.DropTable(
                 name: "AspNetUsers");
+
+            migrationBuilder.DropTable(
+                name: "Agency");
         }
     }
 }
