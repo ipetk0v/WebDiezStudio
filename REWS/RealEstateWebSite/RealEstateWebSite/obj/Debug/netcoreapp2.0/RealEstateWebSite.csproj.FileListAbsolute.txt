@@ -30,5 +30,8 @@ D:\Projects\WebDiezStudio\REWS\RealEstateWebSite\RealEstateWebSite\obj\Debug\net
 D:\Projects\WebDiezStudio\REWS\RealEstateWebSite\RealEstateWebSite\obj\Debug\netcoreapp2.0\RealEstateWebSite.csproj.CopyComplete
 D:\Projects\WebDiezStudio\REWS\RealEstateWebSite\RealEstateWebSite\obj\Debug\netcoreapp2.0\RealEstateWebSite.dll
 D:\Projects\WebDiezStudio\REWS\RealEstateWebSite\RealEstateWebSite\obj\Debug\netcoreapp2.0\RealEstateWebSite.pdb
+<<<<<<< HEAD
 C:\GitHubProject\WebDiezStudio\REWS\RealEstateWebSite\RealEstateWebSite\bin\Debug\netcoreapp2.0\RealEstateWebSite.Services.dll
 C:\GitHubProject\WebDiezStudio\REWS\RealEstateWebSite\RealEstateWebSite\bin\Debug\netcoreapp2.0\RealEstateWebSite.Services.pdb
+=======
+>>>>>>> eec0f47a69daa8fc49641fbc8ca720692cf4dc19
